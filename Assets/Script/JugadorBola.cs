@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class JugadorBola : MonoBehaviour
@@ -8,12 +9,19 @@ public class JugadorBola : MonoBehaviour
     //PUBLICAS
     public Camera camara;
     public GameObject Suelo;
+    public GameObject Jump;
+    public GameObject Bifurcation;
+    public GameObject Reverse;
+    public GameObject Speed;
+    public GameObject Flip;
     public float Velocidad = 5;
 
     //PRIVADAS
     private Vector3 offset;
-    private float ValX, ValZ;
+    private float ValX, ValZ, Val2X, Val2Z;
     private Vector3 Direccion;
+    private bool Saltar = false;
+    private int Bifurcacion = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -34,13 +42,29 @@ public class JugadorBola : MonoBehaviour
 
     void Update()
     {
-        camara.transform.position = transform.position + offset;
-        if(Input.GetKeyUp(KeyCode.Mouse0))
+        if(transform.position.y < 0.72)
         {
-            CambiarDireccion();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
+
+        camara.transform.position = transform.position + offset;
+        if(!Saltar){
+            if(Input.GetKeyUp(KeyCode.Mouse0))
+            {
+                CambiarDireccion();
+                StartCoroutine(girar());     
+            }
+            else{
+                transform.Translate(Direccion * Velocidad * Time.deltaTime, Space.World);
+            }
+        }
+    }
+
+    IEnumerator girar()
+    {
+        GetComponent<Rigidbody>().velocity = Vector3.zero;
+        yield return new WaitForSeconds(0.2f);
         transform.Translate(Direccion * Velocidad * Time.deltaTime, Space.World);
-        
     }
 
     private void OnCollisionExit(Collision other){
@@ -48,27 +72,92 @@ public class JugadorBola : MonoBehaviour
         {
             StartCoroutine(BorrarSuelo(other.gameObject));
         }
-
-        
+        if(other.gameObject.tag == "Bifurcation")
+        {
+            if(Direccion != Vector3.forward){
+                ValX = Val2X;
+                ValZ = Val2Z;
+            }
+            StartCoroutine(BorrarSuelo(other.gameObject));
+        }
     }
 
-    IEnumerator BorrarSuelo(GameObject suelo)
+    private void OnCollisionEnter(Collision other)
+    {
+        if(other.gameObject.tag == "Jump")
+        {
+            Saltar = true;
+            StartCoroutine(jumpPad(other.gameObject));
+        }
+    }
+
+    IEnumerator jumpPad(GameObject suelo)
+    {
+        //impulsa al jugador hacia delante en un angulo de 45 grados
+        GetComponent<Rigidbody>().AddForce(Direccion * 600);
+        GetComponent<Rigidbody>().AddForce(Vector3.up * 350);
+        yield return new WaitForSeconds(0.85f);
+        GetComponent<Rigidbody>().AddForce(Vector3.down * 150);
+        GetComponent<Rigidbody>().AddForce(Direccion * -300);
+        yield return new WaitForSeconds(0.5f);
+        GetComponent<Rigidbody>().velocity = Vector3.zero;
+        yield return new WaitForSeconds(0.1f);        
+        Saltar = false;
+        yield return new WaitForSeconds(1.0f);
+        Destroy(suelo);
+    }
+
+    IEnumerator BorrarSuelo(GameObject coso)
     {
         float aleatorio = Random.Range(0.0f, 1.0f);
-        if (aleatorio < 0.5f)
-        {
-            ValX += 6.0f;
+        float typePad = Random.Range(0.0f, 1.0f);  
+        GameObject pad = Suelo;
+
+        // Elegir direccion
+        if(Bifurcacion == 0){
+            if (aleatorio < 0.5f) {ValX += 6.0f;}
+            else {ValZ += 6.0f;} 
         }
-        else
-        {
+
+        // Crear Pad
+        if(Bifurcacion > 0){
+            Val2X += 6.0f;
             ValZ += 6.0f;
+            Instantiate(Suelo, new Vector3(Val2X, 0, Val2Z), Quaternion.identity);
+            Instantiate(Suelo, new Vector3(ValX, 0, ValZ), Quaternion.identity);
+            Bifurcacion -= 1;
         }
-        Instantiate(suelo, new Vector3(ValX, 0, ValZ), Quaternion.identity);
+        else if(typePad <= 0.9){
+            Instantiate(Suelo, new Vector3(ValX, 0, ValZ), Quaternion.identity);
+        }
+        else if(typePad > 0.9 && typePad <= 0.92){
+            Instantiate(Jump, new Vector3(ValX, 0, ValZ), Quaternion.identity);
+            if(aleatorio < 0.5f) {ValX += 12.0f;}
+            else {ValZ += 12.0f;}
+            Instantiate(Suelo, new Vector3(ValX, 0, ValZ), Quaternion.identity);
+        }
+        else if(typePad > 0.92 && typePad <= 0.94){
+            Instantiate(Bifurcation, new Vector3(ValX, 0, ValZ), Quaternion.identity);
+            Bifurcacion = 3;
+            Val2X = ValX;
+            Val2Z = ValZ;
+        }
+        else if(typePad > 0.94 && typePad <= 0.96){
+            //Flip
+        }
+        else if(typePad > 0.96 && typePad <= 0.98){
+            //Reverse
+        }
+        else if(typePad > 0.98 && typePad <= 1.0){
+            //Speed
+        }
+            
+        // Destruir suelo
         yield return new WaitForSeconds(3);
-        suelo.gameObject.GetComponent<Rigidbody>().isKinematic = false;
-        suelo.gameObject.GetComponent<Rigidbody>().useGravity = true;
+        coso.gameObject.GetComponent<Rigidbody>().isKinematic = false;
+        coso.gameObject.GetComponent<Rigidbody>().useGravity = true;
         yield return new WaitForSeconds(1);
-        Destroy(suelo);
+        Destroy(coso);
     }
 
     void CambiarDireccion()

@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Suelo
+  - Bifurcation
+  - Reverse
+  - Flip
+  - Jump
+  - Speed
   layers:
   - Default
   - TransparentFX
