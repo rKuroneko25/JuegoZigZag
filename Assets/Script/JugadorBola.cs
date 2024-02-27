@@ -22,6 +22,8 @@ public class JugadorBola : MonoBehaviour
     private Vector3 Direccion;
     private bool Saltar = false;
     private int Bifurcacion = 0;
+    private bool flip;
+    private bool stopSpawn;
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +31,8 @@ public class JugadorBola : MonoBehaviour
         offset = camara.transform.position;
         CrearSueloInical();
         Direccion = Vector3.forward;
+        flip = false;
+        stopSpawn = false;
     }
 
     void CrearSueloInical()
@@ -167,6 +171,76 @@ public class JugadorBola : MonoBehaviour
         }
         else{
             Direccion = Vector3.forward;
+        }
+    }
+
+    IEnumerator RotarCamara()
+    {
+        Vector3 angulo;
+        if (flip)
+        {
+            angulo = new Vector3(-25f, 45f, 0f);
+        } else {
+            angulo = new Vector3(30f, 45f, 0f);
+        }
+        while (Quaternion.Angle(camara.transform.rotation, Quaternion.Euler(angulo)) > 0.01f)
+        {
+            camara.transform.rotation = Quaternion.RotateTowards(camara.transform.rotation, Quaternion.Euler(angulo), 30f * Time.deltaTime);
+            yield return null;
+        }
+    }
+
+    void InicioFlip()
+    {
+        stopSpawn = false;
+        Physics.gravity *= -1;
+        flip = !flip;
+        
+        StartCoroutine(RotarCamara());
+
+        float y=0;
+        if (flip) 
+        {
+            if(Direccion == Vector3.forward)
+            {
+                ValZ += 6;
+            }
+            else
+            {
+                ValX += 6;
+            }
+            y=10;
+        } else {
+            if(Direccion == Vector3.forward)
+            {
+                ValZ -= 6;
+            }
+            else
+            {
+                ValX -= 6;
+            }
+        }
+
+        for (int i = 0; i < 4; i++) //forward suma z y right suma x
+        {
+            if(Direccion == Vector3.forward)
+            {
+                ValZ += 6;
+                
+            }
+            else
+            {
+                ValX += 6;
+            }
+            Instantiate(Suelo, new Vector3(ValX, y, ValZ), Quaternion.identity);
+        }
+    }
+
+    private void OnCollisionEnter(Collision other)
+    {
+        if(other.gameObject.tag == "Flip")
+        {
+            InicioFlip();
         }
     }
 }
