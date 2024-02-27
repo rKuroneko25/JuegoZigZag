@@ -35,7 +35,7 @@ public class JugadorBola : MonoBehaviour
     void Update()
     {
         camara.transform.position = transform.position + offset;
-        if(Input.GetKeyUp(KeyCode.Space))
+        if(Input.GetKeyUp(KeyCode.Mouse0))
         {
             CambiarDireccion();
         }
