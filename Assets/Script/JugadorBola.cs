@@ -48,6 +48,8 @@ public class JugadorBola : MonoBehaviour
         {
             StartCoroutine(BorrarSuelo(other.gameObject));
         }
+
+        
     }
 
     IEnumerator BorrarSuelo(GameObject suelo)
