@@ -10,6 +10,7 @@ TagManager:
   - Flip
   - Jump
   - Speed
+  - Borde
   layers:
   - Default
   - TransparentFX
