@@ -15,7 +15,6 @@ public class JugadorBola : MonoBehaviour
     public GameObject Reverse;
     public GameObject Speed;
     public GameObject Flip;
-    public GameObject Speed;
     public float Velocidad = 15f;
 
     //PRIVADAS
@@ -112,6 +111,10 @@ public class JugadorBola : MonoBehaviour
         if(other.gameObject.tag == "Reverse"){
             izqOrDer *= -1;
         }
+
+        if(other.gameObject.tag == "Speed"){
+            InicioSpeed();
+        }
     }
 
     IEnumerator jumpPad(GameObject suelo)
@@ -119,15 +122,13 @@ public class JugadorBola : MonoBehaviour
         int z = 1;
         if(flip){z = -1;}
 
-        //impulsa al jugador hacia delante en un angulo de 45 grados
         GetComponent<Rigidbody>().AddForce(Direccion * 600);
         GetComponent<Rigidbody>().AddForce(Vector3.up * 350 * z);
         yield return new WaitForSeconds(0.85f);
         GetComponent<Rigidbody>().AddForce(Vector3.down * 150 * z);
-        GetComponent<Rigidbody>().AddForce(Direccion * -300);
+        GetComponent<Rigidbody>().AddForce(Direccion * -200);
         yield return new WaitForSeconds(0.5f);
-        GetComponent<Rigidbody>().velocity = Vector3.zero;
-        yield return new WaitForSeconds(0.1f);        
+        GetComponent<Rigidbody>().velocity = Vector3.zero;      
         Saltar = false;
         yield return new WaitForSeconds(1.0f);
         Destroy(suelo);
@@ -247,7 +248,7 @@ public class JugadorBola : MonoBehaviour
         if (Direccion == Vector3.forward) 
             {ValZ += 10+plus;}
         else 
-            {ValX += 10+plus;}
+            {ValX += (10+plus)*orientacion;}
 
         while(i>0) //forward suma z y right suma x
         {
@@ -257,7 +258,7 @@ public class JugadorBola : MonoBehaviour
             }
             else
             {
-                ValX += 6;
+                ValX += 6 * orientacion;
             }
             Instantiate(Suelo, new Vector3(ValX, y, ValZ), Quaternion.identity);
             i--;
