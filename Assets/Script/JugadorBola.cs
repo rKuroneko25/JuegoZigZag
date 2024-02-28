@@ -220,25 +220,17 @@ public class JugadorBola : MonoBehaviour
                 Val2Z = ValZ;
             }
             else if(typePad > 0.94 && typePad <= 0.96){
-                if (reverseDelay)
-                    Instantiate(Suelo, new Vector3(ValX, y, ValZ), Quaternion.identity);
-                else {
-                    Instantiate(Flip, new Vector3(ValX, y, ValZ), Quaternion.identity);
-                    HelpX = ValX;
-                    HelpZ = ValZ;
-                    HelpX = ValX;
-                    HelpZ = ValZ;
-                    stopSpawn = true;
-                }
+                Instantiate(Flip, new Vector3(ValX, y, ValZ), Quaternion.identity);
+                HelpX = ValX;
+                HelpZ = ValZ;
+                HelpX = ValX;
+                HelpZ = ValZ;
+                stopSpawn = true;
             }
             else if(typePad > 0.96 && typePad <= 0.98){
-                if (reverseDelay)
-                    Instantiate(Suelo, new Vector3(ValX, y, ValZ), Quaternion.identity);
-                else {
-                    Instantiate(Reverse, new Vector3(ValX, y, ValZ), Quaternion.identity);
-                    orientacion *= -1;
-                    reverso = true;
-                }
+                Instantiate(Reverse, new Vector3(ValX, y, ValZ), Quaternion.identity);
+                orientacion *= -1;
+                reverso = true;
             }
             else if(typePad > 0.98 && typePad <= 1.0){
                 if (speedDelay)
