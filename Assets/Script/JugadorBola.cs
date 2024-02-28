@@ -11,7 +11,7 @@ public class JugadorBola : MonoBehaviour
     public GameObject Suelo;
     public GameObject Flip;
     public GameObject Speed;
-    public float Velocidad = 5;
+    public float Velocidad = 15f;
 
     //PRIVADAS
     private Vector3 offset;
@@ -19,7 +19,7 @@ public class JugadorBola : MonoBehaviour
     private Vector3 Direccion;
     private bool flip;
     private bool stopSpawn;
-    private bool gear;
+    private bool sonic;
 
     // Start is called before the first frame update
     void Start()
@@ -28,7 +28,9 @@ public class JugadorBola : MonoBehaviour
         CrearSueloInical();
         Direccion = Vector3.forward;
         flip = false;
+        sonic = false;
         stopSpawn = false;
+        Velocidad = 15f;
     }
 
     void CrearSueloInical()
@@ -52,13 +54,21 @@ public class JugadorBola : MonoBehaviour
     }
 
     private void OnCollisionExit(Collision other){
-        if(other.gameObject.tag == "Suelo")
+        if(other.gameObject.tag == "Suelo" || other.gameObject.tag == "Flip" || other.gameObject.tag == "Speed")
         {
             StartCoroutine(BorrarSuelo(other.gameObject));
         }
+    }
+
+    private void OnCollisionEnter(Collision other)
+    {
         if(other.gameObject.tag == "Flip")
         {
-            StartCoroutine(BorrarFlip(other.gameObject));
+            InicioFlip();
+        }
+        if(other.gameObject.tag == "Speed")
+        {
+            InicioSpeed();
         }
     }
 
@@ -69,7 +79,6 @@ public class JugadorBola : MonoBehaviour
         float y=0;
         if (flip) {y=10;}
 
-        //Posicion generada
         if (aleatorio < 0.5f)
         {
             ValX += 6.0f;
@@ -79,12 +88,15 @@ public class JugadorBola : MonoBehaviour
             ValZ += 6.0f;
         }
         
-        //Pad generator
         if (!stopSpawn) 
         {
             if (typePad <= 0.7f)
             {
                 Instantiate(Suelo, new Vector3(ValX, y, ValZ), Quaternion.identity);
+            }
+            else if (typePad <= 0.85f)
+            {
+                Instantiate(Speed, new Vector3(ValX, y, ValZ), Quaternion.identity);
             }
             else
             {
@@ -94,16 +106,6 @@ public class JugadorBola : MonoBehaviour
                 stopSpawn = true;
             }
         }
-        
-        yield return new WaitForSeconds(3);
-        suelo.gameObject.GetComponent<Rigidbody>().isKinematic = false;
-        suelo.gameObject.GetComponent<Rigidbody>().useGravity = true;
-        yield return new WaitForSeconds(1);
-        Destroy(suelo);
-    }
-
-    IEnumerator BorrarFlip(GameObject suelo)
-    {
         yield return new WaitForSeconds(3);
         suelo.gameObject.GetComponent<Rigidbody>().isKinematic = false;
         suelo.gameObject.GetComponent<Rigidbody>().useGravity = true;
@@ -144,18 +146,23 @@ public class JugadorBola : MonoBehaviour
         stopSpawn = false;
         Physics.gravity *= -1;
         flip = !flip;
-        
+
         StartCoroutine(RotarCamara());
+
+        int i=2;
 
         float y=0;
         if (flip) {y=10;}
 
-        if (Direccion == Vector3.forward) 
-            {ValZ += 10;}
-        else 
-            {ValX += 10;}
+        float plus=0;
+        if (sonic) {plus=8; i=3;}
 
-        for (int i = 0; i < 4; i++) //forward suma z y right suma x
+        if (Direccion == Vector3.forward) 
+            {ValZ += 10+plus;}
+        else 
+            {ValX += 10+plus;}
+
+        while(i>0) //forward suma z y right suma x
         {
             if(Direccion == Vector3.forward)
             {
@@ -166,14 +173,16 @@ public class JugadorBola : MonoBehaviour
                 ValX += 6;
             }
             Instantiate(Suelo, new Vector3(ValX, y, ValZ), Quaternion.identity);
+            i--;
         }
     }
 
-    private void OnCollisionEnter(Collision other)
+    void InicioSpeed() 
     {
-        if(other.gameObject.tag == "Flip")
-        {
-            InicioFlip();
-        }
+        sonic = !sonic;
+        if (sonic)
+            {Velocidad = 20f;}
+        else
+            {Velocidad = 15f;}
     }
 }

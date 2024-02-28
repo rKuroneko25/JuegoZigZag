@@ -272,7 +272,7 @@ MonoBehaviour:
   camara: {fileID: 1610252149}
   Suelo: {fileID: 4145304917915513016, guid: fd4eb745d7b24b04ababf5f4a9c53e9d, type: 3}
   Flip: {fileID: 8051447588747256486, guid: 8683269f3dc3c9a499af42182ab8e752, type: 3}
-  Speed: {fileID: 0}
+  Speed: {fileID: 3168532536453901322, guid: 26255ca86b203a54c835d2ebe5a17bcc, type: 3}
   Velocidad: 15
 --- !u!1 &1610252147
 GameObject:
