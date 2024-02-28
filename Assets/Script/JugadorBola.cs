@@ -33,6 +33,8 @@ public class JugadorBola : MonoBehaviour
     private bool sonic;
     private GameObject JUMPAD;
     private bool Forward = true;
+    private bool speedDelay;
+    private bool reverseDelay;
 
     // Start is called before the first frame update
     void Start()
@@ -44,6 +46,7 @@ public class JugadorBola : MonoBehaviour
         sonic = false;
         stopSpawn = false;
         Velocidad = 15f;
+        speedDelay = false;
     }
 
     void CrearSueloInical()
@@ -121,7 +124,7 @@ public class JugadorBola : MonoBehaviour
         }
 
         if(other.gameObject.tag == "Reverse"){
-            izqOrDer *= -1;
+            InicioReverse();
         }
 
         if(other.gameObject.tag == "Speed"){
@@ -217,20 +220,31 @@ public class JugadorBola : MonoBehaviour
                 Val2Z = ValZ;
             }
             else if(typePad > 0.94 && typePad <= 0.96){
-                Instantiate(Flip, new Vector3(ValX, y, ValZ), Quaternion.identity);
-                HelpX = ValX;
-                HelpZ = ValZ;
-                HelpX = ValX;
-                HelpZ = ValZ;
-                stopSpawn = true;
+                if (reverseDelay)
+                    Instantiate(Suelo, new Vector3(ValX, y, ValZ), Quaternion.identity);
+                else {
+                    Instantiate(Flip, new Vector3(ValX, y, ValZ), Quaternion.identity);
+                    HelpX = ValX;
+                    HelpZ = ValZ;
+                    HelpX = ValX;
+                    HelpZ = ValZ;
+                    stopSpawn = true;
+                }
             }
             else if(typePad > 0.96 && typePad <= 0.98){
-                Instantiate(Reverse, new Vector3(ValX, y, ValZ), Quaternion.identity);
-                orientacion *= -1;
-                reverso = true;
+                if (reverseDelay)
+                    Instantiate(Suelo, new Vector3(ValX, y, ValZ), Quaternion.identity);
+                else {
+                    Instantiate(Reverse, new Vector3(ValX, y, ValZ), Quaternion.identity);
+                    orientacion *= -1;
+                    reverso = true;
+                }
             }
             else if(typePad > 0.98 && typePad <= 1.0){
-                Instantiate(Speed, new Vector3(ValX, y, ValZ), Quaternion.identity);
+                if (speedDelay)
+                    Instantiate(Suelo, new Vector3(ValX, y, ValZ), Quaternion.identity);
+                else
+                    Instantiate(Speed, new Vector3(ValX, y, ValZ), Quaternion.identity);
             }
         }
             
@@ -266,7 +280,23 @@ public class JugadorBola : MonoBehaviour
             camara.transform.rotation = Quaternion.RotateTowards(camara.transform.rotation, Quaternion.Euler(angulo), 30f * Time.deltaTime);
             yield return null;
         }
+        
     }
+    /*
+    IEnumerator RotarAmarac() //No es 100% funcional
+    {
+        Vector3 angulo;
+        if (izqOrDer == -1)
+            angulo = new Vector3(30f, -45f, 0f);
+        else
+            angulo = new Vector3(30f, 45f, 0f);
+
+        while (Quaternion.Angle(camara.transform.rotation, Quaternion.Euler(angulo)) > 0.01f)
+        {
+            camara.transform.rotation = Quaternion.RotateTowards(camara.transform.rotation, Quaternion.Euler(angulo), 100f * Time.deltaTime);
+            yield return null;
+        }
+    }*/
 
     void InicioFlip(){
         ValX = HelpX;
@@ -281,6 +311,7 @@ public class JugadorBola : MonoBehaviour
         if (flip) {y=10;}
 
         float plus=0;
+        if (sonic) {plus=8;}
         if (sonic) {plus=8;}
 
         if (Direccion == Vector3.forward) 
@@ -305,9 +336,36 @@ public class JugadorBola : MonoBehaviour
     void InicioSpeed() 
     {
         sonic = !sonic;
+        speedDelay = true;
+        StartCoroutine(SpeedDelay());
         if (sonic)
             {Velocidad = 20f;}
         else
             {Velocidad = 15f;}
+    }
+
+    void InicioReverse()
+    {
+        reverseDelay = true;
+        izqOrDer *= -1;
+
+        StartCoroutine(ReverseDelay());
+        /*
+        offset = new Vector3(offset.x*-1, offset.y, offset.z);
+        
+        StartCoroutine(RotarAmarac());
+        */        
+    }
+
+    IEnumerator SpeedDelay()
+    {
+        yield return new WaitForSeconds(5);
+        speedDelay = false;
+    }
+
+    IEnumerator ReverseDelay()
+    {
+        yield return new WaitForSeconds(2);
+        reverseDelay = false;
     }
 }
