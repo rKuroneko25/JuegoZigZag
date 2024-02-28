@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -14,7 +15,8 @@ public class JugadorBola : MonoBehaviour
     public GameObject Reverse;
     public GameObject Speed;
     public GameObject Flip;
-    public float Velocidad = 5;
+    public GameObject Speed;
+    public float Velocidad = 15f;
 
     //PRIVADAS
     private Vector3 offset;
@@ -27,6 +29,7 @@ public class JugadorBola : MonoBehaviour
     private int orientacion = 1;
     private int izqOrDer = 1;
     private bool reverso = false;
+    private bool sonic;
 
     // Start is called before the first frame update
     void Start()
@@ -35,7 +38,9 @@ public class JugadorBola : MonoBehaviour
         CrearSueloInical();
         Direccion = Vector3.forward;
         flip = false;
+        sonic = false;
         stopSpawn = false;
+        Velocidad = 15f;
     }
 
     void CrearSueloInical()
@@ -174,6 +179,8 @@ public class JugadorBola : MonoBehaviour
                 Instantiate(Flip, new Vector3(ValX, y, ValZ), Quaternion.identity);
                 HelpX = ValX;
                 HelpZ = ValZ;
+                HelpX = ValX;
+                HelpZ = ValZ;
                 stopSpawn = true;
             }
             else if(typePad > 0.96 && typePad <= 0.98){
@@ -226,28 +233,43 @@ public class JugadorBola : MonoBehaviour
         stopSpawn = false;
         Physics.gravity *= -1;
         flip = !flip;
-        
+
         StartCoroutine(RotarCamara());
 
+        int i=2;
+
         float y=0;
+        if (flip) {y=10;}
 
-        if(flip){y = 10;}
-    
-        if(Direccion == Vector3.forward){
-            ValZ += 10;
-        }
-        else{
-            ValX += 10 * orientacion;
-        }
+        float plus=0;
+        if (sonic) {plus=8; i=3;}
 
-        for (int i = 0; i < 2; i++){ //forward suma z y right suma x
-            if(Direccion == Vector3.forward){
-                ValZ += 6; 
+        if (Direccion == Vector3.forward) 
+            {ValZ += 10+plus;}
+        else 
+            {ValX += 10+plus;}
+
+        while(i>0) //forward suma z y right suma x
+        {
+            if(Direccion == Vector3.forward)
+            {
+                ValZ += 6;
             }
-            else{
-                ValX += 6 * orientacion;
+            else
+            {
+                ValX += 6;
             }
             Instantiate(Suelo, new Vector3(ValX, y, ValZ), Quaternion.identity);
+            i--;
         }
+    }
+
+    void InicioSpeed() 
+    {
+        sonic = !sonic;
+        if (sonic)
+            {Velocidad = 20f;}
+        else
+            {Velocidad = 15f;}
     }
 }
