@@ -34,7 +34,6 @@ public class JugadorBola : MonoBehaviour
     private GameObject JUMPAD;
     private bool Forward = true;
     private bool speedDelay;
-    private bool reverseDelay;
 
     // Start is called before the first frame update
     void Start()
@@ -124,7 +123,7 @@ public class JugadorBola : MonoBehaviour
         }
 
         if(other.gameObject.tag == "Reverse"){
-            InicioReverse();
+            izqOrDer *= -1;
         }
 
         if(other.gameObject.tag == "Speed"){
@@ -336,28 +335,9 @@ public class JugadorBola : MonoBehaviour
             {Velocidad = 15f;}
     }
 
-    void InicioReverse()
-    {
-        reverseDelay = true;
-        izqOrDer *= -1;
-
-        StartCoroutine(ReverseDelay());
-        /*
-        offset = new Vector3(offset.x*-1, offset.y, offset.z);
-        
-        StartCoroutine(RotarAmarac());
-        */        
-    }
-
     IEnumerator SpeedDelay()
     {
         yield return new WaitForSeconds(5);
         speedDelay = false;
-    }
-
-    IEnumerator ReverseDelay()
-    {
-        yield return new WaitForSeconds(2);
-        reverseDelay = false;
     }
 }
