@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.IO;
+using Unity.VisualScripting;
 
 
 public class JugadorBola : MonoBehaviour
@@ -34,18 +36,26 @@ public class JugadorBola : MonoBehaviour
     private GameObject JUMPAD;
     private bool Forward = true;
     private bool speedDelay;
+    private string Nivel; //Nivel 0 = Arcade
+    private string[] padsNivel;
+    private int padActual = 0;
 
     // Start is called before the first frame update
     void Start()
     {
+        //Nivel = PlayerPrefs.GetString("Nivel");
+        Nivel = "1";
         offset = camara.transform.position;
-        CrearSueloInical();
         Direccion = Vector3.forward;
         flip = false;
         sonic = false;
         stopSpawn = false;
         Velocidad = 15f;
         speedDelay = false;
+        if (Nivel == "0") //Arcade
+            CrearSueloInical();
+        else
+            CargaNivel();
     }
 
     void CrearSueloInical()
@@ -93,21 +103,26 @@ public class JugadorBola : MonoBehaviour
     }
 
     private void OnCollisionExit(Collision other){
-        if(other.gameObject.tag == "Suelo" || 
-           other.gameObject.tag == "Reverse" || 
-           other.gameObject.tag == "Speed" ||
-           other.gameObject.tag == "Flip")
-        {
-            StartCoroutine(BorrarSuelo(other.gameObject));
-        }
-        if(other.gameObject.tag == "Bifurcation")
-        {
-            if(Direccion != Vector3.forward){
-                ValX = Val2X;
-                ValZ = Val2Z;
+        if (Nivel == "0") {
+            if(other.gameObject.tag == "Suelo" || 
+               other.gameObject.tag == "Reverse" || 
+               other.gameObject.tag == "Speed" ||
+               other.gameObject.tag == "Flip")
+            {
+                StartCoroutine(BorrarSuelo(other.gameObject));
             }
-            StartCoroutine(BorrarSuelo(other.gameObject));
+            if(other.gameObject.tag == "Bifurcation")
+            {
+                if(Direccion != Vector3.forward){
+                    ValX = Val2X;
+                    ValZ = Val2Z;
+                }
+                StartCoroutine(BorrarSuelo(other.gameObject));
+            }
+        } else {
+            StartCoroutine(GeneraPad(other.gameObject));
         }
+
     }
 
     private void OnCollisionEnter(Collision other)
@@ -290,9 +305,12 @@ public class JugadorBola : MonoBehaviour
     }*/
 
     void InicioFlip(){
-        ValX = HelpX;
-        ValZ = HelpZ;
-        stopSpawn = false;
+        if (Nivel == "0")
+        {
+            ValX = HelpX;
+            ValZ = HelpZ;
+            stopSpawn = false;
+        }
         Physics.gravity *= -1;
         flip = !flip;
 
@@ -339,5 +357,69 @@ public class JugadorBola : MonoBehaviour
     {
         yield return new WaitForSeconds(5);
         speedDelay = false;
+    }
+
+    public void CargaNivel()
+    {
+        string fichero = Application.dataPath + "/Niveles/nivel" + Nivel + ".txt";
+
+        string[] lineas = File.ReadAllLines(fichero);
+
+        foreach (string linea in lineas)
+            padsNivel = linea.Split(',');
+
+        CrearSueloInical();
+    }
+
+    IEnumerator GeneraPad(GameObject coso)
+    {
+        string pad = padsNivel[padActual];
+        padActual += 1;
+
+        if (pad[0] == 'F')
+            ValZ += 6;
+        else
+            ValX += 6*orientacion;
+        
+        float y=0;
+        if (flip) {y=10;}
+
+        switch(pad[1]){
+            case 'N':
+                Instantiate(Suelo, new Vector3(ValX, y, ValZ), Quaternion.identity);
+                break;
+
+            case 'S':
+                Instantiate(Speed, new Vector3(ValX, y, ValZ), Quaternion.identity);
+                break;
+
+            case 'B':
+                //logica del bifurcation, que no me la se :(
+                Instantiate(Bifurcation, new Vector3(ValX, y, ValZ), Quaternion.identity);
+                break;
+
+            case 'F':
+                Instantiate(Flip, new Vector3(ValX, y, ValZ), Quaternion.identity);
+                break;
+
+            case 'J':
+                Instantiate(Jump, new Vector3(ValX, y, ValZ), Quaternion.identity);
+                if(pad[0] == 'f') 
+                    {ValZ += 6;}
+                else 
+                    {ValX += 6*orientacion;}
+                break;
+
+            case 'R':
+                Instantiate(Reverse, new Vector3(ValX, y, ValZ), Quaternion.identity);
+                orientacion *= -1;
+                break;
+        }
+
+        yield return new WaitForSeconds(3);
+        coso.gameObject.GetComponent<Rigidbody>().isKinematic = false;
+        coso.gameObject.GetComponent<Rigidbody>().useGravity = true;
+        yield return new WaitForSeconds(1);
+        Destroy(coso);
     }
 }
