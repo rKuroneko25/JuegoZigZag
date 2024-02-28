@@ -18,12 +18,15 @@ public class JugadorBola : MonoBehaviour
 
     //PRIVADAS
     private Vector3 offset;
-    private float ValX, ValZ, Val2X, Val2Z;
+    private float ValX, ValZ, Val2X, Val2Z, HelpX, HelpZ;
     private Vector3 Direccion;
     private bool Saltar = false;
     private int Bifurcacion = 0;
     private bool flip;
     private bool stopSpawn;
+    private int orientacion = 1;
+    private int izqOrDer = 1;
+    private bool reverso = false;
 
     // Start is called before the first frame update
     void Start()
@@ -46,12 +49,12 @@ public class JugadorBola : MonoBehaviour
 
     void Update()
     {
-        if(transform.position.y < 0.72)
+        if(transform.position.y < 0.50)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
-        camara.transform.position = transform.position + offset;
+        camara.transform.position = new Vector3(transform.position.x, 0, transform.position.z) + offset;
         if(!Saltar){
             if(Input.GetKeyUp(KeyCode.Mouse0))
             {
@@ -72,7 +75,10 @@ public class JugadorBola : MonoBehaviour
     }
 
     private void OnCollisionExit(Collision other){
-        if(other.gameObject.tag == "Suelo")
+        if(other.gameObject.tag == "Suelo" || 
+           other.gameObject.tag == "Reverse" || 
+           other.gameObject.tag == "Speed" ||
+           other.gameObject.tag == "Flip")
         {
             StartCoroutine(BorrarSuelo(other.gameObject));
         }
@@ -93,15 +99,26 @@ public class JugadorBola : MonoBehaviour
             Saltar = true;
             StartCoroutine(jumpPad(other.gameObject));
         }
+
+        if(other.gameObject.tag == "Flip"){
+            InicioFlip();
+        }
+
+        if(other.gameObject.tag == "Reverse"){
+            izqOrDer *= -1;
+        }
     }
 
     IEnumerator jumpPad(GameObject suelo)
     {
+        int z = 1;
+        if(flip){z = -1;}
+
         //impulsa al jugador hacia delante en un angulo de 45 grados
         GetComponent<Rigidbody>().AddForce(Direccion * 600);
-        GetComponent<Rigidbody>().AddForce(Vector3.up * 350);
+        GetComponent<Rigidbody>().AddForce(Vector3.up * 350 * z);
         yield return new WaitForSeconds(0.85f);
-        GetComponent<Rigidbody>().AddForce(Vector3.down * 150);
+        GetComponent<Rigidbody>().AddForce(Vector3.down * 150 * z);
         GetComponent<Rigidbody>().AddForce(Direccion * -300);
         yield return new WaitForSeconds(0.5f);
         GetComponent<Rigidbody>().velocity = Vector3.zero;
@@ -116,44 +133,57 @@ public class JugadorBola : MonoBehaviour
         float aleatorio = Random.Range(0.0f, 1.0f);
         float typePad = Random.Range(0.0f, 1.0f);  
         GameObject pad = Suelo;
+        float y = 0;
+        if(flip){y = 10;}
 
         // Elegir direccion
-        if(Bifurcacion == 0){
-            if (aleatorio < 0.5f) {ValX += 6.0f;}
+        if(reverso){
+            ValZ += 6.0f;
+            reverso = false;
+        }
+        else if(Bifurcacion == 0){
+            if (aleatorio < 0.5f) {ValX += 6.0f * orientacion;}
             else {ValZ += 6.0f;} 
         }
 
         // Crear Pad
-        if(Bifurcacion > 0){
-            Val2X += 6.0f;
-            ValZ += 6.0f;
-            Instantiate(Suelo, new Vector3(Val2X, 0, Val2Z), Quaternion.identity);
-            Instantiate(Suelo, new Vector3(ValX, 0, ValZ), Quaternion.identity);
-            Bifurcacion -= 1;
-        }
-        else if(typePad <= 0.9){
-            Instantiate(Suelo, new Vector3(ValX, 0, ValZ), Quaternion.identity);
-        }
-        else if(typePad > 0.9 && typePad <= 0.92){
-            Instantiate(Jump, new Vector3(ValX, 0, ValZ), Quaternion.identity);
-            if(aleatorio < 0.5f) {ValX += 12.0f;}
-            else {ValZ += 12.0f;}
-            Instantiate(Suelo, new Vector3(ValX, 0, ValZ), Quaternion.identity);
-        }
-        else if(typePad > 0.92 && typePad <= 0.94){
-            Instantiate(Bifurcation, new Vector3(ValX, 0, ValZ), Quaternion.identity);
-            Bifurcacion = 3;
-            Val2X = ValX;
-            Val2Z = ValZ;
-        }
-        else if(typePad > 0.94 && typePad <= 0.96){
-            //Flip
-        }
-        else if(typePad > 0.96 && typePad <= 0.98){
-            //Reverse
-        }
-        else if(typePad > 0.98 && typePad <= 1.0){
-            //Speed
+        if(!stopSpawn){
+            if(Bifurcacion > 0){
+                Val2X += 6.0f * orientacion;
+                ValZ += 6.0f;
+                Instantiate(Suelo, new Vector3(Val2X, y, Val2Z), Quaternion.identity);
+                Instantiate(Suelo, new Vector3(ValX, y, ValZ), Quaternion.identity);
+                Bifurcacion -= 1;
+            }
+            else if(typePad <= 0.9){
+                Instantiate(Suelo, new Vector3(ValX, y, ValZ), Quaternion.identity);
+            }
+            else if(typePad > 0.9 && typePad <= 0.92){
+                Instantiate(Jump, new Vector3(ValX, y, ValZ), Quaternion.identity);
+                if(aleatorio < 0.5f) {ValX += 12.0f * orientacion;}
+                else {ValZ += 12.0f;}
+                Instantiate(Suelo, new Vector3(ValX, y, ValZ), Quaternion.identity);
+            }
+            else if(typePad > 0.92 && typePad <= 0.94){
+                Instantiate(Bifurcation, new Vector3(ValX, y, ValZ), Quaternion.identity);
+                Bifurcacion = 3;
+                Val2X = ValX;
+                Val2Z = ValZ;
+            }
+            else if(typePad > 0.94 && typePad <= 0.96){
+                Instantiate(Flip, new Vector3(ValX, y, ValZ), Quaternion.identity);
+                HelpX = ValX;
+                HelpZ = ValZ;
+                stopSpawn = true;
+            }
+            else if(typePad > 0.96 && typePad <= 0.98){
+                Instantiate(Reverse, new Vector3(ValX, y, ValZ), Quaternion.identity);
+                orientacion *= -1;
+                reverso = true;
+            }
+            else if(typePad > 0.98 && typePad <= 1.0){
+                Instantiate(Speed, new Vector3(ValX, y, ValZ), Quaternion.identity);
+            }
         }
             
         // Destruir suelo
@@ -167,7 +197,7 @@ public class JugadorBola : MonoBehaviour
     void CambiarDireccion()
     {
         if(Direccion == Vector3.forward){
-            Direccion = Vector3.right;
+            Direccion = Vector3.right * izqOrDer;
         }
         else{
             Direccion = Vector3.forward;
@@ -190,8 +220,9 @@ public class JugadorBola : MonoBehaviour
         }
     }
 
-    void InicioFlip()
-    {
+    void InicioFlip(){
+        ValX = HelpX;
+        ValZ = HelpZ;
         stopSpawn = false;
         Physics.gravity *= -1;
         flip = !flip;
@@ -199,48 +230,24 @@ public class JugadorBola : MonoBehaviour
         StartCoroutine(RotarCamara());
 
         float y=0;
-        if (flip) 
-        {
-            if(Direccion == Vector3.forward)
-            {
-                ValZ += 6;
-            }
-            else
-            {
-                ValX += 6;
-            }
-            y=10;
-        } else {
-            if(Direccion == Vector3.forward)
-            {
-                ValZ -= 6;
-            }
-            else
-            {
-                ValX -= 6;
-            }
+
+        if(flip){y = 10;}
+    
+        if(Direccion == Vector3.forward){
+            ValZ += 10;
+        }
+        else{
+            ValX += 10 * orientacion;
         }
 
-        for (int i = 0; i < 4; i++) //forward suma z y right suma x
-        {
-            if(Direccion == Vector3.forward)
-            {
-                ValZ += 6;
-                
+        for (int i = 0; i < 2; i++){ //forward suma z y right suma x
+            if(Direccion == Vector3.forward){
+                ValZ += 6; 
             }
-            else
-            {
-                ValX += 6;
+            else{
+                ValX += 6 * orientacion;
             }
             Instantiate(Suelo, new Vector3(ValX, y, ValZ), Quaternion.identity);
-        }
-    }
-
-    private void OnCollisionEnter(Collision other)
-    {
-        if(other.gameObject.tag == "Flip")
-        {
-            InicioFlip();
         }
     }
 }
