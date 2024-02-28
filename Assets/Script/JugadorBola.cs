@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 
@@ -9,14 +10,16 @@ public class JugadorBola : MonoBehaviour
     public Camera camara;
     public GameObject Suelo;
     public GameObject Flip;
+    public GameObject Speed;
     public float Velocidad = 5;
 
     //PRIVADAS
     private Vector3 offset;
-    private float ValX, ValZ;
+    private float ValX, ValZ, HelpX, HelpZ;
     private Vector3 Direccion;
     private bool flip;
     private bool stopSpawn;
+    private bool gear;
 
     // Start is called before the first frame update
     void Start()
@@ -86,6 +89,8 @@ public class JugadorBola : MonoBehaviour
             else
             {
                 Instantiate(Flip, new Vector3(ValX, y, ValZ), Quaternion.identity);
+                HelpX = ValX;
+                HelpZ = ValZ;
                 stopSpawn = true;
             }
         }
@@ -134,6 +139,8 @@ public class JugadorBola : MonoBehaviour
 
     void InicioFlip()
     {
+        ValX = HelpX;
+        ValZ = HelpZ;
         stopSpawn = false;
         Physics.gravity *= -1;
         flip = !flip;
@@ -141,34 +148,18 @@ public class JugadorBola : MonoBehaviour
         StartCoroutine(RotarCamara());
 
         float y=0;
-        if (flip) 
-        {
-            if(Direccion == Vector3.forward)
-            {
-                ValZ += 6;
-            }
-            else
-            {
-                ValX += 6;
-            }
-            y=10;
-        } else {
-            if(Direccion == Vector3.forward)
-            {
-                ValZ -= 6;
-            }
-            else
-            {
-                ValX -= 6;
-            }
-        }
+        if (flip) {y=10;}
+
+        if (Direccion == Vector3.forward) 
+            {ValZ += 10;}
+        else 
+            {ValX += 10;}
 
         for (int i = 0; i < 4; i++) //forward suma z y right suma x
         {
             if(Direccion == Vector3.forward)
             {
                 ValZ += 6;
-                
             }
             else
             {

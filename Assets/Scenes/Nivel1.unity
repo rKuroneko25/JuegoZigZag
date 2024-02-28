@@ -272,7 +272,8 @@ MonoBehaviour:
   camara: {fileID: 1610252149}
   Suelo: {fileID: 4145304917915513016, guid: fd4eb745d7b24b04ababf5f4a9c53e9d, type: 3}
   Flip: {fileID: 8051447588747256486, guid: 8683269f3dc3c9a499af42182ab8e752, type: 3}
-  Velocidad: 20
+  Speed: {fileID: 0}
+  Velocidad: 15
 --- !u!1 &1610252147
 GameObject:
   m_ObjectHideFlags: 0
@@ -359,7 +360,7 @@ Transform:
   m_GameObject: {fileID: 1610252147}
   serializedVersion: 2
   m_LocalRotation: {x: 0.23911765, y: 0.3696438, z: -0.09904577, w: 0.89239913}
-  m_LocalPosition: {x: -5.5, y: 6, z: -5.5}
+  m_LocalPosition: {x: -6.025218, y: 6.4288397, z: -6.025218}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
