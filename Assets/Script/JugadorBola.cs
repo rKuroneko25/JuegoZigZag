@@ -15,6 +15,7 @@ public class JugadorBola : MonoBehaviour
     public GameObject Reverse;
     public GameObject Speed;
     public GameObject Flip;
+    public GameObject Borde;
     public float Velocidad = 15f;
 
     //PRIVADAS
@@ -22,6 +23,7 @@ public class JugadorBola : MonoBehaviour
     private float ValX, ValZ, Val2X, Val2Z, HelpX, HelpZ;
     private Vector3 Direccion;
     private bool Saltar = false;
+    private bool Saltando = false;
     private int Bifurcacion = 0;
     private bool flip;
     private bool stopSpawn;
@@ -29,6 +31,8 @@ public class JugadorBola : MonoBehaviour
     private int izqOrDer = 1;
     private bool reverso = false;
     private bool sonic;
+    private GameObject JUMPAD;
+    private bool Forward = true;
 
     // Start is called before the first frame update
     void Start()
@@ -53,22 +57,30 @@ public class JugadorBola : MonoBehaviour
 
     void Update()
     {
-        if(transform.position.y < 0.50)
+        if(transform.position.y < 0.50  || transform.position.y > 9.50)
         {
+            if (flip) {Physics.gravity *= -1;}
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
         camara.transform.position = new Vector3(transform.position.x, 0, transform.position.z) + offset;
-        if(!Saltar){
+
+        if(!Saltando){
+            transform.Translate(Direccion * Velocidad * Time.deltaTime, Space.World);
+        
             if(Input.GetKeyUp(KeyCode.Mouse0))
             {
-                CambiarDireccion();
-                StartCoroutine(girar());     
-            }
-            else{
-                transform.Translate(Direccion * Velocidad * Time.deltaTime, Space.World);
-            }
+                if(!Saltar){
+                    CambiarDireccion();
+                    StartCoroutine(girar());     
+                }
+                else{
+                    Saltando = true;
+                    StartCoroutine(jumpPad(JUMPAD)); 
+                }
+            } 
         }
+      
     }
 
     IEnumerator girar()
@@ -101,7 +113,7 @@ public class JugadorBola : MonoBehaviour
         if(other.gameObject.tag == "Jump")
         {
             Saltar = true;
-            StartCoroutine(jumpPad(other.gameObject));
+            JUMPAD = other.gameObject;
         }
 
         if(other.gameObject.tag == "Flip"){
@@ -115,6 +127,12 @@ public class JugadorBola : MonoBehaviour
         if(other.gameObject.tag == "Speed"){
             InicioSpeed();
         }
+
+        if(other.gameObject.tag == "Borde")
+        {
+            if (flip) {Physics.gravity *= -1;}
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
 
     IEnumerator jumpPad(GameObject suelo)
@@ -122,14 +140,15 @@ public class JugadorBola : MonoBehaviour
         int z = 1;
         if(flip){z = -1;}
 
-        GetComponent<Rigidbody>().AddForce(Direccion * 600);
-        GetComponent<Rigidbody>().AddForce(Vector3.up * 350 * z);
+        GetComponent<Rigidbody>().AddForce(Direccion * 500);
+        GetComponent<Rigidbody>().AddForce(Vector3.up * 300 * z);
         yield return new WaitForSeconds(0.85f);
         GetComponent<Rigidbody>().AddForce(Vector3.down * 150 * z);
         GetComponent<Rigidbody>().AddForce(Direccion * -200);
         yield return new WaitForSeconds(0.5f);
-        GetComponent<Rigidbody>().velocity = Vector3.zero;      
+        GetComponent<Rigidbody>().velocity = Vector3.zero;
         Saltar = false;
+        Saltando = false;
         yield return new WaitForSeconds(1.0f);
         Destroy(suelo);
     }
@@ -144,17 +163,38 @@ public class JugadorBola : MonoBehaviour
 
         // Elegir direccion
         if(reverso){
+            if(!Forward)
+                {
+                    Instantiate(Borde, new Vector3(ValX+(3*orientacion*(-1)), y, ValZ), Quaternion.identity);
+                }
             ValZ += 6.0f;
-            reverso = false;
         }
         else if(Bifurcacion == 0){
-            if (aleatorio < 0.5f) {ValX += 6.0f * orientacion;}
-            else {ValZ += 6.0f;} 
+            if (aleatorio < 0.5f) {
+                if(Forward)
+                {
+                    Instantiate(Borde, new Vector3(ValX, y, ValZ+3), Quaternion.Euler(0, 90, 0));
+                }
+                ValX += 6.0f * orientacion;
+                Forward = false;
+                }
+            else {
+                if(!Forward)
+                {
+                    Instantiate(Borde, new Vector3(ValX+(3*orientacion), y, ValZ), Quaternion.identity);
+                }
+                ValZ += 6.0f;
+                Forward = true;
+            } 
         }
 
         // Crear Pad
         if(!stopSpawn){
-            if(Bifurcacion > 0){
+            if(reverso){
+                Instantiate(Suelo, new Vector3(ValX, y, ValZ), Quaternion.identity);
+                reverso = false;
+            }
+            else if(Bifurcacion > 0){
                 Val2X += 6.0f * orientacion;
                 ValZ += 6.0f;
                 Instantiate(Suelo, new Vector3(Val2X, y, Val2Z), Quaternion.identity);
@@ -237,20 +277,18 @@ public class JugadorBola : MonoBehaviour
 
         StartCoroutine(RotarCamara());
 
-        int i=2;
-
         float y=0;
         if (flip) {y=10;}
 
         float plus=0;
-        if (sonic) {plus=8; i=3;}
+        if (sonic) {plus=8;}
 
         if (Direccion == Vector3.forward) 
             {ValZ += 10+plus;}
         else 
             {ValX += (10+plus)*orientacion;}
 
-        while(i>0) //forward suma z y right suma x
+        for(int i=0 ; i<3 ; i++) //forward suma z y right suma x
         {
             if(Direccion == Vector3.forward)
             {
@@ -261,7 +299,6 @@ public class JugadorBola : MonoBehaviour
                 ValX += 6 * orientacion;
             }
             Instantiate(Suelo, new Vector3(ValX, y, ValZ), Quaternion.identity);
-            i--;
         }
     }
 
