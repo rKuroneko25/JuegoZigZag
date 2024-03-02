@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 46109170}
   - component: {fileID: 46109169}
   - component: {fileID: 46109168}
+  - component: {fileID: 46109171}
   m_Layer: 5
   m_Name: Arcade
   m_TagString: Untagged
@@ -181,7 +182,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 3
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -197,9 +198,9 @@ MonoBehaviour:
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
+    m_HighlightedTrigger: Normal
+    m_PressedTrigger: Enlarge
+    m_SelectedTrigger: Shrink
     m_DisabledTrigger: Disabled
   m_Interactable: 1
   m_TargetGraphic: {fileID: 46109169}
@@ -244,6 +245,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 46109166}
   m_CullTransparentMesh: 1
+--- !u!95 &46109171
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 46109166}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2814ca997d0b30644a7c1c949e4589f4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &275276734
 GameObject:
   m_ObjectHideFlags: 0
@@ -284,10 +306,10 @@ MonoBehaviour:
     source: {fileID: 0}
     volume: 0
     loop: 0
-  - name: Start level
+  - name: StartLevel
     clip: {fileID: 8300000, guid: f217645ae3407894ba70d837da8af538, type: 3}
     source: {fileID: 0}
-    volume: 0
+    volume: 0.512
     loop: 0
   - name: Quit level
     clip: {fileID: 8300000, guid: 362ba1ca435c29145b7cbe3b2fd3b365, type: 3}
@@ -451,6 +473,7 @@ GameObject:
   - component: {fileID: 962811825}
   - component: {fileID: 962811824}
   - component: {fileID: 962811827}
+  - component: {fileID: 962811828}
   m_Layer: 5
   m_Name: Levels
   m_TagString: Untagged
@@ -497,12 +520,12 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 3
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_NormalColor: {r: 1, g: 0, b: 0, a: 1}
+    m_HighlightedColor: {r: 0, g: 0.08543205, b: 1, a: 1}
+    m_PressedColor: {r: 0.88600266, g: 1, b: 0, a: 1}
+    m_SelectedColor: {r: 0, g: 1, b: 0.1849277, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -513,9 +536,9 @@ MonoBehaviour:
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
+    m_HighlightedTrigger: Normal
+    m_PressedTrigger: Enlarge
+    m_SelectedTrigger: Shrink
     m_DisabledTrigger: Disabled
   m_Interactable: 1
   m_TargetGraphic: {fileID: 962811825}
@@ -572,6 +595,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa892d4e03572824b88c00408f7eede2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &962811828
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 962811822}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2814ca997d0b30644a7c1c949e4589f4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0

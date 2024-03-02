@@ -248,12 +248,10 @@ public class JugadorBola : MonoBehaviour
                     DirBifurc = true;
                 }
                 else{ // Side
-                    if(orientacion == 1)
-                    {
+                    if(orientacion == 1){
                         Instantiate(Bifurcation, new Vector3(ValX, y, ValZ), Quaternion.Euler(0, 0, 0));
                     }
-                    else
-                    {
+                    else{
                         Instantiate(Bifurcation, new Vector3(ValX, y, ValZ), Quaternion.Euler(0, 180, 0));
                     }
                     DirBifurc = false;
