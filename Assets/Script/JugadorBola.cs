@@ -44,8 +44,8 @@ public class JugadorBola : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //Nivel = PlayerPrefs.GetString("Nivel");
-        Nivel = "0";
+        //Nivel = PlayerPrefs.GetString("LevelSelected");
+        Nivel = "1";
         offset = camara.transform.position;
         Direccion = Vector3.forward;
         flip = false;
@@ -53,6 +53,7 @@ public class JugadorBola : MonoBehaviour
         stopSpawn = false;
         Velocidad = 15f;
         speedDelay = false;
+        Bifurcacion = 0;
         if (Nivel == "0") //Arcade
             CrearSueloInical();
         else
@@ -277,6 +278,7 @@ public class JugadorBola : MonoBehaviour
                     Instantiate(Suelo, new Vector3(ValX, y, ValZ), Quaternion.identity);
                 else
                     Instantiate(Speed, new Vector3(ValX, y, ValZ), Quaternion.identity);
+                    speedDelay = true;
             }
         }
             
@@ -370,7 +372,6 @@ public class JugadorBola : MonoBehaviour
     void InicioSpeed() 
     {
         sonic = !sonic;
-        speedDelay = true;
         StartCoroutine(SpeedDelay());
         if (sonic)
             {Velocidad = 20f;}
@@ -409,6 +410,17 @@ public class JugadorBola : MonoBehaviour
                 Instantiate(Suelo, new Vector3(Val2X, y, Val2Z), Quaternion.identity);
                 Instantiate(Suelo, new Vector3(ValX, y, ValZ), Quaternion.identity);
                 Bifurcacion -= 1;
+                if (Bifurcacion == 0)
+                {
+                    if(!DirBifurc)
+                    {
+                        ValX = Val2X;
+                        ValZ = Val2Z;
+                    }else{ //sin esto no va xD
+                        Val2X = ValX;
+                        Val2Z = ValZ;
+                    }
+                }
             }
             else {
                 string pad = padsNivel[padActual];
@@ -420,8 +432,9 @@ public class JugadorBola : MonoBehaviour
                         Instantiate(Borde, new Vector3(ValX+(3*orientacion*(-1)), y, ValZ), Quaternion.identity);
                     }
                     ValZ += 6.0f;
+                    reverso = false;
                 } else {
-                    if (pad[0] == 'R') {
+                    if (pad[0] == 'S') {
                         if(Forward)
                         {
                             Instantiate(Borde, new Vector3(ValX, y, ValZ+3), Quaternion.Euler(0, 90, 0));
@@ -449,7 +462,21 @@ public class JugadorBola : MonoBehaviour
                         break;
 
                     case 'B':
-                        Instantiate(Bifurcation, new Vector3(ValX, y, ValZ), Quaternion.identity);
+                        if(pad[2] == 'F'){ // Forward
+                            Instantiate(Bifurcation, new Vector3(ValX, y, ValZ), Quaternion.Euler(0, 270, 0));
+                            DirBifurc = true;
+                        }
+                        else{ // Side
+                            if(orientacion == 1)
+                            {
+                                Instantiate(Bifurcation, new Vector3(ValX, y, ValZ), Quaternion.Euler(0, 0, 0));
+                            }
+                            else
+                            {
+                                Instantiate(Bifurcation, new Vector3(ValX, y, ValZ), Quaternion.Euler(0, 180, 0));
+                            }
+                            DirBifurc = false;
+                        }
                         Bifurcacion = 3;
                         Val2X = ValX;
                         Val2Z = ValZ;
@@ -472,7 +499,7 @@ public class JugadorBola : MonoBehaviour
                     case 'R':
                         Instantiate(Reverse, new Vector3(ValX, y, ValZ), Quaternion.identity);
                         orientacion *= -1;
-                        reverso = !reverso;
+                        reverso = true;
                         break;
                 }
             }
