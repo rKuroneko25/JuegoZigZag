@@ -11,6 +11,7 @@ TagManager:
   - Jump
   - Speed
   - Borde
+  - Guia
   layers:
   - Default
   - TransparentFX

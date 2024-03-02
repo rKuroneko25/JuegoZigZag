@@ -299,57 +299,57 @@ MonoBehaviour:
   - name: Menu
     clip: {fileID: 8300000, guid: 1b8b051949bb3c348bca290daab89dfd, type: 3}
     source: {fileID: 0}
-    volume: 0.503
+    volume: 0.5
     loop: 1
   - name: Death
     clip: {fileID: 8300000, guid: 67dfa26638da00d4cbeb7c28b3a87cb8, type: 3}
     source: {fileID: 0}
-    volume: 0
+    volume: 0.5
     loop: 0
   - name: StartLevel
     clip: {fileID: 8300000, guid: f217645ae3407894ba70d837da8af538, type: 3}
     source: {fileID: 0}
-    volume: 0.512
+    volume: 0.5
     loop: 0
   - name: Quit level
     clip: {fileID: 8300000, guid: 362ba1ca435c29145b7cbe3b2fd3b365, type: 3}
     source: {fileID: 0}
-    volume: 0
+    volume: 0.5
     loop: 0
   - name: Tutorial
     clip: {fileID: 8300000, guid: ae6ebb109789e29459303e28114b2383, type: 3}
     source: {fileID: 0}
-    volume: 0
+    volume: 0.5
     loop: 1
   - name: Win
     clip: {fileID: 8300000, guid: c93d4bf527b02524c9fec67abefd924f, type: 3}
     source: {fileID: 0}
-    volume: 0
+    volume: 0.5
     loop: 0
-  - name: Level 1
+  - name: Level1
     clip: {fileID: 8300000, guid: 2b80c3f948ba9064989f0e2167d91547, type: 3}
     source: {fileID: 0}
-    volume: 0
+    volume: 0.5
     loop: 0
-  - name: Level 2
+  - name: Level2
     clip: {fileID: 8300000, guid: cb98bc1131e8f8a48bad64aa32830074, type: 3}
     source: {fileID: 0}
-    volume: 0
+    volume: 0.5
     loop: 0
-  - name: Level 3
+  - name: Level3
     clip: {fileID: 8300000, guid: 8171a61541c98b845826021e2cbb8955, type: 3}
     source: {fileID: 0}
-    volume: 0
+    volume: 0.5
     loop: 0
-  - name: Level 4
+  - name: Level4
     clip: {fileID: 8300000, guid: b042359982566bd40a1d17994b3007ce, type: 3}
     source: {fileID: 0}
-    volume: 0
+    volume: 0.5
     loop: 0
-  - name: Level 5
+  - name: Level5
     clip: {fileID: 8300000, guid: 202690f9d2c86874da9869b38db9a1e0, type: 3}
     source: {fileID: 0}
-    volume: 0
+    volume: 0.5
     loop: 0
 --- !u!4 &275276736
 Transform:

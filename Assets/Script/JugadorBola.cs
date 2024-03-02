@@ -18,6 +18,7 @@ public class JugadorBola : MonoBehaviour
     public GameObject Speed;
     public GameObject Flip;
     public GameObject Borde;
+    public GameObject Guia;
     public float Velocidad = 15f;
 
     //PRIVADAS
@@ -44,8 +45,8 @@ public class JugadorBola : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //Nivel = PlayerPrefs.GetString("LevelSelected");
-        Nivel = "1";
+        Nivel = PlayerPrefs.GetString("LevelSelected");
+        //Nivel = "1";
         offset = camara.transform.position;
         Direccion = Vector3.forward;
         flip = false;
@@ -389,8 +390,9 @@ public class JugadorBola : MonoBehaviour
 
         string[] lineas = File.ReadAllLines(fichero);
 
-        foreach (string linea in lineas)
-            padsNivel = linea.Split(',');
+        string megalinea = string.Join("",lineas);
+
+        padsNivel = megalinea.Split(',');
 
         CrearSueloInical();
     }
@@ -451,6 +453,10 @@ public class JugadorBola : MonoBehaviour
                 }
 
                 switch(pad[1]){
+                    case 'G':
+                        Instantiate(Guia, new Vector3(ValX, y, ValZ), Quaternion.identity);
+                        break;
+
                     case 'N':
                         Instantiate(Suelo, new Vector3(ValX, y, ValZ), Quaternion.identity);
                         break;

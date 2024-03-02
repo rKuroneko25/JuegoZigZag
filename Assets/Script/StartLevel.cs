@@ -22,9 +22,14 @@ public class StartLevel : MonoBehaviour
 
     IEnumerator LoadLevel()
     {
-        yield return new WaitForSeconds(1);
         string level = gameObject.name;
+        FindObjectOfType<AudioManager>().Play(level);
+        yield return new WaitForSeconds(1);
         PlayerPrefs.SetString("LevelSelected", level[5].ToString());
         SceneManager.LoadScene(level);
+        //realmente no haria falta tener una escena para cada nivel, tan solo una llamada "Level"
+        //ya que el nivel en si es un archivo, no se que pilla "level = gameObject.name", por eso
+        //no lo he cambiado, pero hay ponerlo bien
+        //para el tutorial si que habria que crear 5 distintos
     }
 }
