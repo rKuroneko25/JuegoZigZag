@@ -120,6 +120,11 @@ public class JugadorBola : MonoBehaviour
                 StartCoroutine(BorrarSuelo(other.gameObject));
             }
         } else {
+            if(other.gameObject.tag == "Bifurcation")
+                if(Direccion != Vector3.forward){
+                    ValX = Val2X;
+                    ValZ = Val2Z;
+                }
             StartCoroutine(GeneraPad(other.gameObject));
         }
 
@@ -178,7 +183,6 @@ public class JugadorBola : MonoBehaviour
         float y = 0;
         if(flip){y = 10;}
 
-        // Elegir direccion
         if(reverso){
             if(!Forward)
                 {
@@ -205,7 +209,6 @@ public class JugadorBola : MonoBehaviour
             } 
         }
 
-        // Crear Pad
         if(!stopSpawn){
             if(reverso){
                 Instantiate(Suelo, new Vector3(ValX, y, ValZ), Quaternion.identity);
@@ -237,8 +240,6 @@ public class JugadorBola : MonoBehaviour
                 Instantiate(Flip, new Vector3(ValX, y, ValZ), Quaternion.identity);
                 HelpX = ValX;
                 HelpZ = ValZ;
-                HelpX = ValX;
-                HelpZ = ValZ;
                 stopSpawn = true;
             }
             else if(typePad > 0.96 && typePad <= 0.98){
@@ -254,7 +255,6 @@ public class JugadorBola : MonoBehaviour
             }
         }
             
-        // Destruir suelo
         yield return new WaitForSeconds(3);
         coso.gameObject.GetComponent<Rigidbody>().isKinematic = false;
         coso.gameObject.GetComponent<Rigidbody>().useGravity = true;
@@ -309,8 +309,8 @@ public class JugadorBola : MonoBehaviour
         {
             ValX = HelpX;
             ValZ = HelpZ;
-            stopSpawn = false;
         }
+        stopSpawn = false;
         Physics.gravity *= -1;
         flip = !flip;
 
@@ -373,47 +373,84 @@ public class JugadorBola : MonoBehaviour
 
     IEnumerator GeneraPad(GameObject coso)
     {
-        string pad = padsNivel[padActual];
-        padActual += 1;
+        if (!stopSpawn) {
 
-        if (pad[0] == 'F')
-            ValZ += 6;
-        else
-            ValX += 6*orientacion;
-        
-        float y=0;
-        if (flip) {y=10;}
+            float y=0;
+            if (flip) {y=10;}
 
-        switch(pad[1]){
-            case 'N':
+            if(Bifurcacion > 0){
+                Val2X += 6.0f * orientacion;
+                ValZ += 6.0f;
+                Instantiate(Suelo, new Vector3(Val2X, y, Val2Z), Quaternion.identity);
                 Instantiate(Suelo, new Vector3(ValX, y, ValZ), Quaternion.identity);
-                break;
+                Bifurcacion -= 1;
+            }
+            else {
+                string pad = padsNivel[padActual];
+                padActual += 1;
 
-            case 'S':
-                Instantiate(Speed, new Vector3(ValX, y, ValZ), Quaternion.identity);
-                break;
+                if(reverso){
+                    if(!Forward)
+                    {
+                        Instantiate(Borde, new Vector3(ValX+(3*orientacion*(-1)), y, ValZ), Quaternion.identity);
+                    }
+                    ValZ += 6.0f;
+                } else {
+                    if (pad[0] == 'R') {
+                        if(Forward)
+                        {
+                            Instantiate(Borde, new Vector3(ValX, y, ValZ+3), Quaternion.Euler(0, 90, 0));
+                        }
+                        ValX += 6.0f * orientacion;
+                        Forward = false;
+                        }
+                    else {
+                        if(!Forward)
+                        {
+                            Instantiate(Borde, new Vector3(ValX+(3*orientacion), y, ValZ), Quaternion.identity);
+                        }
+                        ValZ += 6.0f;
+                        Forward = true;
+                    } 
+                }
 
-            case 'B':
-                //logica del bifurcation, que no me la se :(
-                Instantiate(Bifurcation, new Vector3(ValX, y, ValZ), Quaternion.identity);
-                break;
+                switch(pad[1]){
+                    case 'N':
+                        Instantiate(Suelo, new Vector3(ValX, y, ValZ), Quaternion.identity);
+                        break;
 
-            case 'F':
-                Instantiate(Flip, new Vector3(ValX, y, ValZ), Quaternion.identity);
-                break;
+                    case 'S':
+                        Instantiate(Speed, new Vector3(ValX, y, ValZ), Quaternion.identity);
+                        break;
 
-            case 'J':
-                Instantiate(Jump, new Vector3(ValX, y, ValZ), Quaternion.identity);
-                if(pad[0] == 'f') 
-                    {ValZ += 6;}
-                else 
-                    {ValX += 6*orientacion;}
-                break;
+                    case 'B':
+                        Instantiate(Bifurcation, new Vector3(ValX, y, ValZ), Quaternion.identity);
+                        Bifurcacion = 3;
+                        Val2X = ValX;
+                        Val2Z = ValZ;
+                        break;
 
-            case 'R':
-                Instantiate(Reverse, new Vector3(ValX, y, ValZ), Quaternion.identity);
-                orientacion *= -1;
-                break;
+                    case 'F':
+                        Instantiate(Flip, new Vector3(ValX, y, ValZ), Quaternion.identity);
+                        stopSpawn = true;
+                        break;
+
+                    case 'J':
+                        Instantiate(Jump, new Vector3(ValX, y, ValZ), Quaternion.identity);
+                        if(pad[0] == 'F') 
+                            {ValZ += 12;}
+                        else 
+                            {ValX += 12*orientacion;}
+                        Instantiate(Suelo, new Vector3(ValX, y, ValZ), Quaternion.identity);
+                        break;
+
+                    case 'R':
+                        Instantiate(Reverse, new Vector3(ValX, y, ValZ), Quaternion.identity);
+                        orientacion *= -1;
+                        reverso = !reverso;
+                        break;
+                }
+            }
         }
 
         yield return new WaitForSeconds(3);
