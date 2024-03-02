@@ -6,21 +6,20 @@ using UnityEngine.UI;
 
 public class Levels : MonoBehaviour
 {
+
+    AudioManager audioManager;
     // Start is called before the first frame update
     void Start()
     {
         //detiene la musica del audiomanager
-        AudioManager.instance.Stop("Musica");
+        AudioManager.instance.Play("Menu");
 
         Button button = GetComponent<Button>();
-
         button.onClick.AddListener(TaskOnClick);
     }
 
     void TaskOnClick()
     {
-        SceneManager.LoadScene("Level1");
-        PlayerPrefs.SetInt("Vidas", 3);
-        PlayerPrefs.SetInt("Coin", 0);
+        SceneManager.LoadScene("LevelSelector");
     }
 }

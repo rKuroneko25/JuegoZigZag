@@ -39,12 +39,13 @@ public class JugadorBola : MonoBehaviour
     private string Nivel; //Nivel 0 = Arcade
     private string[] padsNivel;
     private int padActual = 0;
+    private bool DirBifurc; 
 
     // Start is called before the first frame update
     void Start()
     {
         //Nivel = PlayerPrefs.GetString("Nivel");
-        Nivel = "1";
+        Nivel = "0";
         offset = camara.transform.position;
         Direccion = Vector3.forward;
         flip = false;
@@ -107,18 +108,19 @@ public class JugadorBola : MonoBehaviour
             if(other.gameObject.tag == "Suelo" || 
                other.gameObject.tag == "Reverse" || 
                other.gameObject.tag == "Speed" ||
-               other.gameObject.tag == "Flip")
+               other.gameObject.tag == "Flip" ||
+               other.gameObject.tag == "Bifurcation")
             {
                 StartCoroutine(BorrarSuelo(other.gameObject));
             }
-            if(other.gameObject.tag == "Bifurcation")
-            {
-                if(Direccion != Vector3.forward){
-                    ValX = Val2X;
-                    ValZ = Val2Z;
-                }
-                StartCoroutine(BorrarSuelo(other.gameObject));
-            }
+            // if(other.gameObject.tag == "Bifurcation")
+            // {
+            //     if(Direccion != Vector3.forward){
+            //         ValX = Val2X;
+            //         ValZ = Val2Z;
+            //     }
+            //     StartCoroutine(BorrarSuelo(other.gameObject));
+            // }
         } else {
             if(other.gameObject.tag == "Bifurcation")
                 if(Direccion != Vector3.forward){
@@ -178,6 +180,7 @@ public class JugadorBola : MonoBehaviour
     IEnumerator BorrarSuelo(GameObject coso)
     {
         float aleatorio = Random.Range(0.0f, 1.0f);
+        float BifurcationRandom = Random.Range(0.0f, 1.0f);
         float typePad = Random.Range(0.0f, 1.0f);  
         GameObject pad = Suelo;
         float y = 0;
@@ -220,6 +223,14 @@ public class JugadorBola : MonoBehaviour
                 Instantiate(Suelo, new Vector3(Val2X, y, Val2Z), Quaternion.identity);
                 Instantiate(Suelo, new Vector3(ValX, y, ValZ), Quaternion.identity);
                 Bifurcacion -= 1;
+                if (Bifurcacion == 0)
+                {
+                    if(!DirBifurc)
+                    {
+                        ValX = Val2X;
+                        ValZ = Val2Z;
+                    }
+                }
             }
             else if(typePad <= 0.9){
                 Instantiate(Suelo, new Vector3(ValX, y, ValZ), Quaternion.identity);
@@ -231,7 +242,21 @@ public class JugadorBola : MonoBehaviour
                 Instantiate(Suelo, new Vector3(ValX, y, ValZ), Quaternion.identity);
             }
             else if(typePad > 0.92 && typePad <= 0.94){
-                Instantiate(Bifurcation, new Vector3(ValX, y, ValZ), Quaternion.identity);
+                if(BifurcationRandom < 0.5f){ // Forward
+                    Instantiate(Bifurcation, new Vector3(ValX, y, ValZ), Quaternion.Euler(0, 270, 0));
+                    DirBifurc = true;
+                }
+                else{ // Side
+                    if(orientacion == 1)
+                    {
+                        Instantiate(Bifurcation, new Vector3(ValX, y, ValZ), Quaternion.Euler(0, 0, 0));
+                    }
+                    else
+                    {
+                        Instantiate(Bifurcation, new Vector3(ValX, y, ValZ), Quaternion.Euler(0, 180, 0));
+                    }
+                    DirBifurc = false;
+                }
                 Bifurcacion = 3;
                 Val2X = ValX;
                 Val2Z = ValZ;
