@@ -23,7 +23,6 @@ public class StartLevel : MonoBehaviour
     IEnumerator LoadLevel()
     {
         string level = gameObject.name;
-        FindObjectOfType<AudioManager>().Play(level);
         yield return new WaitForSeconds(1);
         PlayerPrefs.SetString("LevelSelected", level[5].ToString());
         SceneManager.LoadScene(level);

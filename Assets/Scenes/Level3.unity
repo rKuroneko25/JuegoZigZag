@@ -419,6 +419,7 @@ MonoBehaviour:
   Speed: {fileID: 618765853480075132, guid: c5864c5042a2f72419152c9a30bb37d1, type: 3}
   Flip: {fileID: 3531400495541044565, guid: 7fc70073ec7496c4e846eb5708fd9cbc, type: 3}
   Borde: {fileID: 4414882902275595319, guid: 19c77204dc36bdb438944c37a55f6bd5, type: 3}
+  Guia: {fileID: 4145304917915513016, guid: c1ca5280e003d4f488d7485c90d9e922, type: 3}
   Velocidad: 15
 --- !u!54 &1894161168
 Rigidbody:

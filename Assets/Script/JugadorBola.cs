@@ -46,7 +46,6 @@ public class JugadorBola : MonoBehaviour
     void Start()
     {
         Nivel = PlayerPrefs.GetString("LevelSelected");
-        //Nivel = "1";
         offset = camara.transform.position;
         Direccion = Vector3.forward;
         flip = false;
@@ -58,6 +57,7 @@ public class JugadorBola : MonoBehaviour
         if (Nivel == "0") //Arcade
             CrearSueloInical();
         else
+            FindObjectOfType<AudioManager>().Play("Level" + Nivel);
             CargaNivel();
     }
 
