@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.IO;
 using Unity.VisualScripting;
+using UnityEngine.UI;
 
 
 public class JugadorBola : MonoBehaviour
@@ -20,6 +21,8 @@ public class JugadorBola : MonoBehaviour
     public GameObject Borde;
     public GameObject Guia;
     public float Velocidad = 15f;
+    public Text timerText;
+    public Text scoreText;
 
     //PRIVADAS
     private Vector3 offset;
@@ -41,11 +44,18 @@ public class JugadorBola : MonoBehaviour
     private string[] padsNivel;
     private int padActual = 0;
     private bool DirBifurc; 
+    private int Clicks;
+    private int Attempts;
+    private int score;
+    private float timer;
+    private bool quietomanin;
 
     // Start is called before the first frame update
     void Start()
     {
         Nivel = PlayerPrefs.GetString("LevelSelected");
+        Clicks = PlayerPrefs.GetInt("ClicksNow");
+        Attempts = PlayerPrefs.GetInt("AttemptsNow");
         offset = camara.transform.position;
         Direccion = Vector3.forward;
         flip = false;
@@ -54,11 +64,16 @@ public class JugadorBola : MonoBehaviour
         Velocidad = 15f;
         speedDelay = false;
         Bifurcacion = 0;
-        if (Nivel == "0") //Arcade
+        quietomanin = false;
+        if (Nivel == "0") { //Arcade
             CrearSueloInical();
-        else
+            score = 0;
+            timer = 0;
+        }
+        else{
             FindObjectOfType<AudioManager>().Play("Level" + Nivel);
             CargaNivel();
+        }
     }
 
     void CrearSueloInical()
@@ -72,29 +87,36 @@ public class JugadorBola : MonoBehaviour
 
     void Update()
     {
+        if (Nivel == "0") {
+            timer += Time.deltaTime;
+            timerText.text = "Time: " + timer.ToString("F2");
+            scoreText.text = "Score: " + score;
+        }
         if(transform.position.y < 0.50  || transform.position.y > 9.50)
         {
-            if (flip) {Physics.gravity *= -1;}
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            Muerte();
         }
 
         camara.transform.position = new Vector3(transform.position.x, 0, transform.position.z) + offset;
-
-        if(!Saltando){
-            transform.Translate(Direccion * Velocidad * Time.deltaTime, Space.World);
-        
-            if(Input.GetKeyUp(KeyCode.Mouse0))
-            {
-                if(!Saltar){
-                    CambiarDireccion();
-                    StartCoroutine(girar());     
-                }
-                else{
-                    Saltando = true;
-                    StartCoroutine(jumpPad(JUMPAD)); 
-                }
-            } 
+        if (!quietomanin) {
+            if(!Saltando){
+                transform.Translate(Direccion * Velocidad * Time.deltaTime, Space.World);
+            
+                if(Input.GetKeyUp(KeyCode.Mouse0))
+                {
+                    Clicks += 1;
+                    if(!Saltar){
+                        CambiarDireccion();
+                        StartCoroutine(girar());     
+                    }
+                    else{
+                        Saltando = true;
+                        StartCoroutine(jumpPad(JUMPAD)); 
+                    }
+                } 
+            }
         }
+
       
     }
 
@@ -124,11 +146,6 @@ public class JugadorBola : MonoBehaviour
             //     StartCoroutine(BorrarSuelo(other.gameObject));
             // }
         } else {
-            if(other.gameObject.tag == "Bifurcation")
-                if(Direccion != Vector3.forward){
-                    ValX = Val2X;
-                    ValZ = Val2Z;
-                }
             StartCoroutine(GeneraPad(other.gameObject));
         }
 
@@ -156,8 +173,11 @@ public class JugadorBola : MonoBehaviour
 
         if(other.gameObject.tag == "Borde")
         {
-            if (flip) {Physics.gravity *= -1;}
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            Muerte();
+        }
+        if(other.gameObject.tag == "Guia")
+        {
+            Meta(other.gameObject);
         }
     }
 
@@ -187,6 +207,8 @@ public class JugadorBola : MonoBehaviour
         GameObject pad = Suelo;
         float y = 0;
         if(flip){y = 10;}
+
+        Puntos(coso);
 
         if(reverso){
             if(!Forward)
@@ -515,4 +537,92 @@ public class JugadorBola : MonoBehaviour
         yield return new WaitForSeconds(1);
         Destroy(coso);
     }
+
+    void Muerte()
+    {
+        PlayerPrefs.SetInt("ClicksNow", Clicks);
+        PlayerPrefs.SetInt("AttemptsNow", Attempts+1);
+        GameObject.Find("Jugador").SetActive(false);
+        FindObjectOfType<AudioManager>().Play("Death");
+        FindObjectOfType<AudioManager>().Stop("Level"+Nivel);
+        if (flip) {Physics.gravity *= -1;}
+        Invoke("SceneLoad", 1f);
+    }
+
+    void SceneLoad()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name); 
+    }
+
+    void Meta(GameObject coso)
+    {
+        quietomanin = true;
+        Rigidbody rb = GetComponent<Rigidbody>();
+        if (rb != null)
+        {
+            rb.velocity = Vector3.zero;
+        }
+
+        Vector3 centro = coso.GetComponent<Renderer>().bounds.center;
+        StartCoroutine(DesplazarHaciaCentro(centro));
+        
+        //Guardar la informacion (para la "i" de Level Selector)
+        switch (Nivel)
+        {
+            case "1":
+                PlayerPrefs.SetInt("Clicks1", Clicks + PlayerPrefs.GetInt("Clicks1"));
+                PlayerPrefs.SetInt("Attemps1", Attempts + PlayerPrefs.GetInt("Attemps1"));
+                break;
+
+            case "2":
+                PlayerPrefs.SetInt("Clicks2", Clicks + PlayerPrefs.GetInt("Clicks2"));
+                PlayerPrefs.SetInt("Attemps2", Attempts + PlayerPrefs.GetInt("Attemps2"));
+                break;
+
+            case "3":
+                PlayerPrefs.SetInt("Clicks3", Clicks + PlayerPrefs.GetInt("Clicks3"));
+                PlayerPrefs.SetInt("Attemps3", Attempts + PlayerPrefs.GetInt("Attemps3"));
+                break;
+
+            case "4":
+                PlayerPrefs.SetInt("Clicks4", Clicks + PlayerPrefs.GetInt("Clicks4"));
+                PlayerPrefs.SetInt("Attemps4", Attempts + PlayerPrefs.GetInt("Attemps4"));
+                break;
+
+            case "5":
+                PlayerPrefs.SetInt("Clicks5", Clicks + PlayerPrefs.GetInt("Clicks5"));
+                PlayerPrefs.SetInt("Attemps5", Attempts + PlayerPrefs.GetInt("Attemps5"));
+                break;
+
+            default:
+                break;
+        }
+        //Parar la bola en el centro de la meta
+        //Poppear LevelComplete y la musica Win
+        //Poppear resultados -> Level Complete / Clicks: / Attempts: 
+    }
+
+    IEnumerator DesplazarHaciaCentro(Vector3 centro)
+    {
+        while (Vector3.Distance(transform.position, centro) > 0.01f)
+        {
+            transform.position = Vector3.Lerp(transform.position, centro, Time.deltaTime * 2);
+            yield return null;
+        }
+
+        transform.position = centro;
+    }
+
+    void Puntos(GameObject coso)
+    {
+        int fm=0, rm=0, sm=0;
+        if (flip) {fm = 1;}
+        if (orientacion == -1) {rm = 1;}
+        if (sonic) {sm = 1;}
+
+        if (coso.tag == "Suelo") {score += 1 * (System.Math.Max(fm*3,1)) * (System.Math.Max(rm*3,1)) * (System.Math.Max(sm*2,1));}
+        if (coso.tag == "Bifurcation") {score += 10 * (System.Math.Max(fm*3,1)) * (System.Math.Max(rm*3,1)) * (System.Math.Max(sm*2,1));}
+        if (coso.tag == "Jump") {score += 30 * (System.Math.Max(fm*3,1)) * (System.Math.Max(rm*3,1)) * (System.Math.Max(sm*2,1));}
+    }
+    
 }
