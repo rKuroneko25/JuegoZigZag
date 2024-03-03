@@ -1,20 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
-public class Levels : MonoBehaviour
+public class Arcade : MonoBehaviour
 {
     public GameObject fade;
     private Animator animator;
 
-    AudioManager audioManager;
     // Start is called before the first frame update
     void Start()
     {
-        //detiene la musica del audiomanager
-        AudioManager.instance.Play("Menu");
         animator = fade.GetComponent<Animator>();
 
         Button button = GetComponent<Button>();
@@ -30,7 +27,10 @@ public class Levels : MonoBehaviour
     {
         fade.SetActive(true);
         animator.SetTrigger("FadeInT");
-        yield return new WaitForSeconds(0.5f);
-        SceneManager.LoadScene("LevelSelector");
+        FindObjectOfType<AudioManager>().Play("StartLevel");
+        FindObjectOfType<AudioManager>().Stop("Menu");
+        yield return new WaitForSeconds(1f);
+        PlayerPrefs.SetString("LevelSelected", "0");
+        SceneManager.LoadScene("Arcade");
     }
 }

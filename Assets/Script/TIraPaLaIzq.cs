@@ -11,6 +11,12 @@ public class TIraPaLaIzq : MonoBehaviour
     public GameObject interfaz;
     public GameObject interfazParent;
     private Animator animator;
+    public Camera camara;
+    public GameObject Barra1;
+    public GameObject Barra2;
+    public GameObject Barra3;
+    public GameObject Barra4;
+    public GameObject Barra5;
 
     void Start()
     {
@@ -24,6 +30,7 @@ public class TIraPaLaIzq : MonoBehaviour
     void Update(){
         level = PlayerPrefs.GetInt("LevelSelected");
         Direccion = PlayerPrefs.GetInt("Direccion");
+
     }
 
     void TaskOnClick()
@@ -37,6 +44,38 @@ public class TIraPaLaIzq : MonoBehaviour
             level--;
             PlayerPrefs.SetInt("LevelSelected", level);
             animator.SetTrigger("Izquierda");
+            StartCoroutine(CambiaColor());
+        }
+    }
+
+    IEnumerator CambiaColor()
+    {
+        yield return new WaitForSeconds(0.25f);
+        switch (level)
+        {
+            case 1:
+                camara.backgroundColor = new Color(1, 0.5f, 0);
+                Barra1.SetActive(true);
+                Barra2.SetActive(false);
+                break;
+            case 2:
+                camara.backgroundColor = new Color(1, 0, 0);
+                Barra2.SetActive(true);
+                Barra3.SetActive(false);
+                break;
+            case 3:
+                camara.backgroundColor = new Color(1, 0, 1);
+                Barra3.SetActive(true);
+                Barra4.SetActive(false);
+                break;
+            case 4:
+                camara.backgroundColor = new Color(0, 1, 0);
+                Barra4.SetActive(true);
+                Barra5.SetActive(false);
+                break;
+            case 5:
+                camara.backgroundColor = new Color(1, 1, 0);
+                break;
         }
     }
 }

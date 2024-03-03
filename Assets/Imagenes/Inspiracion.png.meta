@@ -178,8 +178,29 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 3177
-        width: 1558
+        width: 1557
         height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 1, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53bca209398cf7c4abc305a2623d7015
+      internalID: 1133220262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Salir
+      rect:
+        serializedVersion: 2
+        x: 1993
+        y: 2018
+        width: 181
+        height: 185
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,8 +208,134 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 53bca209398cf7c4abc305a2623d7015
-      internalID: 1133220262
+      spriteID: b0115f0e21911e64c837bf50417e254f
+      internalID: -1680912795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Configuration
+      rect:
+        serializedVersion: 2
+        x: 1879
+        y: 1740
+        width: 200
+        height: 204
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1928e1dabefb8b846bcfe42a007c9281
+      internalID: 1444991848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boton
+      rect:
+        serializedVersion: 2
+        x: 1418
+        y: 2401
+        width: 365
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81cc8b21d372cc74786a290b8f43aede
+      internalID: 341612406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Corner
+      rect:
+        serializedVersion: 2
+        x: 2281
+        y: 2226
+        width: 189
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24f083168a81f3a4eae27ce9196a8af0
+      internalID: -2049977083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Patras
+      rect:
+        serializedVersion: 2
+        x: 2745
+        y: 961
+        width: 125
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0c97c6cb03311c408c0130fd004bd90
+      internalID: 2046330665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Incredible
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 1831
+        width: 506
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f63ecd316dc166f429f45c44cd764fe9
+      internalID: -1109913253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Botonsito
+      rect:
+        serializedVersion: 2
+        x: 3011
+        y: 478
+        width: 119
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08d0cd7ccd4739f4bbbee6a8994c608a
+      internalID: -2043103950
       vertices: []
       indices: 
       edges: []
@@ -204,10 +351,17 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      Boton: 341612406
+      Botonsito: -2043103950
+      Configuration: 1444991848
+      Corner: -2049977083
       Flecha: 411653934
+      Incredible: -1109913253
       Palito: -1514042403
       Palo abajo: 1133220262
       Palo arriba: 256366489
+      Patras: 2046330665
+      Salir: -1680912795
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
