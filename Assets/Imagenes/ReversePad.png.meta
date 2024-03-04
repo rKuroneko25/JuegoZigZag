@@ -6,7 +6,7 @@ TextureImporter:
   serializedVersion: 12
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -37,13 +37,13 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -52,9 +52,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -108,18 +108,1558 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: ReversePad_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6912
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3faaa66f57186aa46b69615afc026958
+      internalID: -32565805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_1
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 6912
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7738c67197344f84eb99fd6853162979
+      internalID: 1271156049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_2
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 6912
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9cebb8651f4b9c4caf346ae3993f38c
+      internalID: 1549067011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_3
+      rect:
+        serializedVersion: 2
+        x: 3498
+        y: 6912
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16a545fcc5f085146a115a53fd9f3f83
+      internalID: 732496320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_4
+      rect:
+        serializedVersion: 2
+        x: 4664
+        y: 6912
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b5867c2d4356614ea77c32b3c469814
+      internalID: -2059753720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_5
+      rect:
+        serializedVersion: 2
+        x: 5830
+        y: 6912
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb54bba89d82f534e87efdc46b7d1dd3
+      internalID: -345005878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_6
+      rect:
+        serializedVersion: 2
+        x: 6996
+        y: 6912
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20ac8ccd076cf9644a510ea9cdc2059b
+      internalID: 44455378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6144
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6cddcae168639946866c72b87f933f2
+      internalID: 1493850708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_8
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 6144
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ab6be9fbebc6ef4fae0eb95f65a45ba
+      internalID: 1346079875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_9
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 6144
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57fe50e70a4b7ed4094e0203fd9ac588
+      internalID: -762214538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_10
+      rect:
+        serializedVersion: 2
+        x: 3498
+        y: 6144
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9baae7a3c217f447bd9c0cd18c3670b
+      internalID: -2018830749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_11
+      rect:
+        serializedVersion: 2
+        x: 4664
+        y: 6144
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a0e4e0e4668b2b44898362e3328d2b4
+      internalID: -602779799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_12
+      rect:
+        serializedVersion: 2
+        x: 5830
+        y: 6144
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34bca2c5e9fe381458d70bb3b4400d11
+      internalID: -2046177557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_13
+      rect:
+        serializedVersion: 2
+        x: 6996
+        y: 6144
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: badee945ab4c4084a9fee354a20ed184
+      internalID: -1719428699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5376
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e730242e7ef6d144f84f9199cfd4b9f4
+      internalID: 1226501990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_15
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 5376
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0e9e95fd40d26a44a0b613d5ca45d14
+      internalID: -782709094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_16
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 5376
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0be689fd865d1584c9ddcbc229e4a363
+      internalID: 205096006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_17
+      rect:
+        serializedVersion: 2
+        x: 3498
+        y: 5376
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0c11f85efb44ff4291f93b24677681f
+      internalID: 909275436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_18
+      rect:
+        serializedVersion: 2
+        x: 4664
+        y: 5376
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93cb6908e2eedf642883f3434531324c
+      internalID: -650665795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_19
+      rect:
+        serializedVersion: 2
+        x: 5830
+        y: 5376
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6f4302b3b00db64297a86e08bee10cc
+      internalID: -1262476446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_20
+      rect:
+        serializedVersion: 2
+        x: 6996
+        y: 5376
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f4cf6cf05d879647a02f9917a0d5b0b
+      internalID: 1930276796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4608
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 983e291f8dc8c0d408345c3b812c2874
+      internalID: -2018862675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_22
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 4608
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1f05cbf18581c643b857d2f8992da9c
+      internalID: 1048945708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_23
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 4608
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe9cf0d262ef0ec4ab73c7f6342cf00e
+      internalID: -60400772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_24
+      rect:
+        serializedVersion: 2
+        x: 3498
+        y: 4608
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 822cfc3788e7e29469d32282247f860a
+      internalID: -1779621796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_25
+      rect:
+        serializedVersion: 2
+        x: 4664
+        y: 4608
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf41cc7eb04ca0443a6a8e34c851543a
+      internalID: 711747412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_26
+      rect:
+        serializedVersion: 2
+        x: 5830
+        y: 4608
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30a361f9ef4699c4f9ec7bd6edb19ff8
+      internalID: 908393228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_27
+      rect:
+        serializedVersion: 2
+        x: 6996
+        y: 4608
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73d95a1fdc2aed54dac2fa7b4f5b1436
+      internalID: -2103385741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3840
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78f749fa90678474b9ab5684fea347b0
+      internalID: 1798312850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_29
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 3840
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a43b843d63b87a49a58cb4875d151f9
+      internalID: -2078011935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_30
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 3840
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60d408ade03092d4a87c882359145ac5
+      internalID: -1109609001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_31
+      rect:
+        serializedVersion: 2
+        x: 3498
+        y: 3840
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05add9e889208ad468af75c33f20c982
+      internalID: 49720421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_32
+      rect:
+        serializedVersion: 2
+        x: 4664
+        y: 3840
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a93927803c99dbc46ada7aeda592b660
+      internalID: -605586075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_33
+      rect:
+        serializedVersion: 2
+        x: 5830
+        y: 3840
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12b14d2c0505fc8478fb15e1cdb1d8e8
+      internalID: 1341324826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_34
+      rect:
+        serializedVersion: 2
+        x: 6996
+        y: 3840
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5eb01cfce330174b94e3d557d8eb922
+      internalID: -154135758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3072
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e6388dced797a64580e6a4cff1b40ba
+      internalID: -1323572821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_36
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 3072
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27b495d49a78ef74197342da6a2b0e8f
+      internalID: -1825815880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_37
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 3072
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eabcf03e8a8581f4596c251a172f59b4
+      internalID: 29165478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_38
+      rect:
+        serializedVersion: 2
+        x: 3498
+        y: 3072
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 180a086681e3dda468faedb29e34edb1
+      internalID: -1860598974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_39
+      rect:
+        serializedVersion: 2
+        x: 4664
+        y: 3072
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b74f025419d5e8438b13d477a31f9e2
+      internalID: 591490553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_40
+      rect:
+        serializedVersion: 2
+        x: 5830
+        y: 3072
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb2c2854844d1c34d8438e0e7156bf8d
+      internalID: 609849010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_41
+      rect:
+        serializedVersion: 2
+        x: 6996
+        y: 3072
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01fe6252f8ea17e40843dfd92c4b5e46
+      internalID: 1134863349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2304
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f996d89f6a9ed9459f41d512819e6f1
+      internalID: 1264360053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_43
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 2304
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03395da6986830e44918fc7fafe02834
+      internalID: 1542713479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_44
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 2304
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 635de0f56dc3ace49bd028e2ba977747
+      internalID: -548880362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_45
+      rect:
+        serializedVersion: 2
+        x: 3498
+        y: 2304
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4827a321ff6ad234ab72e873900c2dd0
+      internalID: -1690885384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_46
+      rect:
+        serializedVersion: 2
+        x: 4664
+        y: 2304
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cd5725021f5e7146909fca6ba6c1346
+      internalID: -852177037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_47
+      rect:
+        serializedVersion: 2
+        x: 5830
+        y: 2304
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 084cf6319e7da664e9ddb8d4a5ee5cbc
+      internalID: -1623352299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_48
+      rect:
+        serializedVersion: 2
+        x: 6996
+        y: 2304
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e67f325f08ca4fc4491d085015505c7d
+      internalID: -1996385965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1536
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15319181c1ecca14bbc40fbaa9b5913e
+      internalID: -1752710236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_50
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 1536
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e55ffb7238028b243983036607d17fe8
+      internalID: -2090514918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_51
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 1536
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86561a0e313c2dc46b736275ed6c35a7
+      internalID: 1093175755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_52
+      rect:
+        serializedVersion: 2
+        x: 3498
+        y: 1536
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b809d25d95687434a8df7f69eb4924ff
+      internalID: 2030163962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_53
+      rect:
+        serializedVersion: 2
+        x: 4664
+        y: 1536
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d9edb4b82da4aa4fa09109b43d1f812
+      internalID: -1512957179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_54
+      rect:
+        serializedVersion: 2
+        x: 5830
+        y: 1536
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c42d776f3dd509540b76ebf23aca59b6
+      internalID: -1319552396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_55
+      rect:
+        serializedVersion: 2
+        x: 6996
+        y: 1536
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 423390b126e0432428bea48f5d734e4f
+      internalID: 322803545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee8158d60c484934bb3c8a8b27a9624b
+      internalID: -1465213485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_57
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 768
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dbbf4296759dce4ab17f2f803d1cc19
+      internalID: -1087860050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_58
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 768
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32a1c5aee5f9b5342989afbcb8e0895e
+      internalID: 994424160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_59
+      rect:
+        serializedVersion: 2
+        x: 3498
+        y: 768
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfaad480d3851bc45be43104c265c540
+      internalID: 859483460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_60
+      rect:
+        serializedVersion: 2
+        x: 4664
+        y: 768
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47cf5d430b7e2704aae65a6b15a40613
+      internalID: -850198713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_61
+      rect:
+        serializedVersion: 2
+        x: 5830
+        y: 768
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d5dfc320a8280b47adc69e323519c47
+      internalID: -1363327917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_62
+      rect:
+        serializedVersion: 2
+        x: 6996
+        y: 768
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a7aab6b8bbda26479dfeb7c2a2a0a36
+      internalID: -1202168767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e2d6c272284fe9488d12bd8840c09cb
+      internalID: 2090285511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_64
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 0
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d3a49193a77937438c7448ffcd139ea
+      internalID: 58084320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_65
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 0
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49f2fec35b9718a44b19a8b2b5e8f7ec
+      internalID: 1276704878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_66
+      rect:
+        serializedVersion: 2
+        x: 3498
+        y: 0
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48bb9f8dde4d27a46b81a90350cc1655
+      internalID: 745511570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_67
+      rect:
+        serializedVersion: 2
+        x: 4664
+        y: 0
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5140f2c354d9bb4fb73869cb7e38d42
+      internalID: 2051383624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_68
+      rect:
+        serializedVersion: 2
+        x: 5830
+        y: 0
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fa8d99120d898e4aad5520a66d3f6d6
+      internalID: 1937835132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReversePad_69
+      rect:
+        serializedVersion: 2
+        x: 6996
+        y: 0
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cdebd929f1bdfa42a2fd38c79c4f89d
+      internalID: 839505026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 24937425362c206488ffa0928585ae0a
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ReversePad_0: -32565805
+      ReversePad_1: 1271156049
+      ReversePad_10: -2018830749
+      ReversePad_11: -602779799
+      ReversePad_12: -2046177557
+      ReversePad_13: -1719428699
+      ReversePad_14: 1226501990
+      ReversePad_15: -782709094
+      ReversePad_16: 205096006
+      ReversePad_17: 909275436
+      ReversePad_18: -650665795
+      ReversePad_19: -1262476446
+      ReversePad_2: 1549067011
+      ReversePad_20: 1930276796
+      ReversePad_21: -2018862675
+      ReversePad_22: 1048945708
+      ReversePad_23: -60400772
+      ReversePad_24: -1779621796
+      ReversePad_25: 711747412
+      ReversePad_26: 908393228
+      ReversePad_27: -2103385741
+      ReversePad_28: 1798312850
+      ReversePad_29: -2078011935
+      ReversePad_3: 732496320
+      ReversePad_30: -1109609001
+      ReversePad_31: 49720421
+      ReversePad_32: -605586075
+      ReversePad_33: 1341324826
+      ReversePad_34: -154135758
+      ReversePad_35: -1323572821
+      ReversePad_36: -1825815880
+      ReversePad_37: 29165478
+      ReversePad_38: -1860598974
+      ReversePad_39: 591490553
+      ReversePad_4: -2059753720
+      ReversePad_40: 609849010
+      ReversePad_41: 1134863349
+      ReversePad_42: 1264360053
+      ReversePad_43: 1542713479
+      ReversePad_44: -548880362
+      ReversePad_45: -1690885384
+      ReversePad_46: -852177037
+      ReversePad_47: -1623352299
+      ReversePad_48: -1996385965
+      ReversePad_49: -1752710236
+      ReversePad_5: -345005878
+      ReversePad_50: -2090514918
+      ReversePad_51: 1093175755
+      ReversePad_52: 2030163962
+      ReversePad_53: -1512957179
+      ReversePad_54: -1319552396
+      ReversePad_55: 322803545
+      ReversePad_56: -1465213485
+      ReversePad_57: -1087860050
+      ReversePad_58: 994424160
+      ReversePad_59: 859483460
+      ReversePad_6: 44455378
+      ReversePad_60: -850198713
+      ReversePad_61: -1363327917
+      ReversePad_62: -1202168767
+      ReversePad_63: 2090285511
+      ReversePad_64: 58084320
+      ReversePad_65: 1276704878
+      ReversePad_66: 745511570
+      ReversePad_67: 2051383624
+      ReversePad_68: 1937835132
+      ReversePad_69: 839505026
+      ReversePad_7: 1493850708
+      ReversePad_8: 1346079875
+      ReversePad_9: -762214538
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -33,7 +33,7 @@ public class StartLevel : MonoBehaviour
         PlayerPrefs.SetString("LevelSelected", level[5].ToString());
         PlayerPrefs.SetInt("ClicksNow",0);
         PlayerPrefs.SetInt("AttemptsNow",1);
-        SceneManager.LoadScene("Level");
+        SceneManager.LoadScene("Tutorial"+level[5]);
 
     }
 }
