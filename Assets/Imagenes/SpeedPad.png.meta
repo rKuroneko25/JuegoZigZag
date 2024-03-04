@@ -6,7 +6,7 @@ TextureImporter:
   serializedVersion: 12
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -37,13 +37,13 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -52,9 +52,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -108,18 +108,788 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: SpeedPad_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3072
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 241ca1fecc641924f80264d06ad45d0b
+      internalID: 1501393659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpeedPad_1
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 3072
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9662cfe71072c04194e542d03b8fb22
+      internalID: 1433098987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpeedPad_2
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 3072
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f589d8248b69494493330d1c6de1dfb
+      internalID: -1293710348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpeedPad_3
+      rect:
+        serializedVersion: 2
+        x: 3498
+        y: 3072
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 607db3802442fbf45bb66638b5d53291
+      internalID: -369022514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpeedPad_4
+      rect:
+        serializedVersion: 2
+        x: 4664
+        y: 3072
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f66b5c2b20876a43b8cedd67d653b3a
+      internalID: 1221842462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpeedPad_5
+      rect:
+        serializedVersion: 2
+        x: 5830
+        y: 3072
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf95692d1299cdc4eb18de3d2a00886d
+      internalID: -1679929879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpeedPad_6
+      rect:
+        serializedVersion: 2
+        x: 6996
+        y: 3072
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd2d111fa7d2a0e4da03ab452580e6bf
+      internalID: -406370226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpeedPad_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2304
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad9c11599ce7e6249bfad3eb9efbe064
+      internalID: -28141049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpeedPad_8
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 2304
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e68b5391a3c812e4d9e94fca512543a2
+      internalID: -1719194824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpeedPad_9
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 2304
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92e21b05adc8f60419a0fec19a3ea02c
+      internalID: -264392893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpeedPad_10
+      rect:
+        serializedVersion: 2
+        x: 3498
+        y: 2304
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9a84cef808757040bce838587da42a6
+      internalID: 434762715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpeedPad_11
+      rect:
+        serializedVersion: 2
+        x: 4664
+        y: 2304
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 774035f5078951745a79f0d69906e1a4
+      internalID: -1458916277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpeedPad_12
+      rect:
+        serializedVersion: 2
+        x: 5830
+        y: 2304
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f221b08f3b200b4d9093c3b4d8cafa9
+      internalID: -649252175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpeedPad_13
+      rect:
+        serializedVersion: 2
+        x: 6996
+        y: 2304
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef82dbce942f69f4c8aeedca0d496b2e
+      internalID: -1870583181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpeedPad_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1536
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d656f9ef862a1b142ab79f3c04581062
+      internalID: -245946557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpeedPad_15
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 1536
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1d64aa2bbdc9a94c8c88e808d279f92
+      internalID: 2098685702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpeedPad_16
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 1536
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 360047c1496c0794aa13db0c5729f91c
+      internalID: 2107093452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpeedPad_17
+      rect:
+        serializedVersion: 2
+        x: 3498
+        y: 1536
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e940a1244a9fd4e4099a6672f72f8ea5
+      internalID: 143274973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpeedPad_18
+      rect:
+        serializedVersion: 2
+        x: 4664
+        y: 1536
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 669f9312a4e49d24082fac8235706356
+      internalID: 1910252759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpeedPad_19
+      rect:
+        serializedVersion: 2
+        x: 5830
+        y: 1536
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb09ce32ff09a8043a0b8631a395ad85
+      internalID: 2090989129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpeedPad_20
+      rect:
+        serializedVersion: 2
+        x: 6996
+        y: 1536
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5649eef28da752441a7de8822495b483
+      internalID: -724926090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpeedPad_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc188d67e86afc94ebf3b98b629d2c5d
+      internalID: 966087458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpeedPad_22
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 768
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d281f3c645aae88478c5216ca315457e
+      internalID: 620688092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpeedPad_23
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 768
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b22624634ebbed4e8ee98fae19f590d
+      internalID: 567711964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpeedPad_24
+      rect:
+        serializedVersion: 2
+        x: 3498
+        y: 768
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c292eadac6c62c04091efb411b1986bf
+      internalID: 517255985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpeedPad_25
+      rect:
+        serializedVersion: 2
+        x: 4664
+        y: 768
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cd380b2d1a07584ea9ee737447708df
+      internalID: -1805094174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpeedPad_26
+      rect:
+        serializedVersion: 2
+        x: 5830
+        y: 768
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbe764711cc2c8845976193fed54e3a3
+      internalID: 549089805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpeedPad_27
+      rect:
+        serializedVersion: 2
+        x: 6996
+        y: 768
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b8b7bdc8c22ab048bdab22cab8938cd
+      internalID: -1396290636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpeedPad_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57f7557e60f2f1f4094345bf205d2e78
+      internalID: -2075037219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpeedPad_29
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 0
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ae9685645d622a42a5936d9754d85c1
+      internalID: -15050726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpeedPad_30
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 0
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b66ca93a66d7a440b61521f0bac62f3
+      internalID: -888381841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpeedPad_31
+      rect:
+        serializedVersion: 2
+        x: 3498
+        y: 0
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86119fbaad3b86848a9161635a5bb98c
+      internalID: 1332405119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpeedPad_32
+      rect:
+        serializedVersion: 2
+        x: 4664
+        y: 0
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e126869d835d134f9ccea90c3d32977
+      internalID: 1637472696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpeedPad_33
+      rect:
+        serializedVersion: 2
+        x: 5830
+        y: 0
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e87ea42d852bdf46a41d4659a814813
+      internalID: 557106685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpeedPad_34
+      rect:
+        serializedVersion: 2
+        x: 6996
+        y: 0
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 576cfd5c9f816064ea9b1e7d018e3ee4
+      internalID: 50625694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 84b2269a42a89c645aeaae8bd16883d1
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SpeedPad_0: 1501393659
+      SpeedPad_1: 1433098987
+      SpeedPad_10: 434762715
+      SpeedPad_11: -1458916277
+      SpeedPad_12: -649252175
+      SpeedPad_13: -1870583181
+      SpeedPad_14: -245946557
+      SpeedPad_15: 2098685702
+      SpeedPad_16: 2107093452
+      SpeedPad_17: 143274973
+      SpeedPad_18: 1910252759
+      SpeedPad_19: 2090989129
+      SpeedPad_2: -1293710348
+      SpeedPad_20: -724926090
+      SpeedPad_21: 966087458
+      SpeedPad_22: 620688092
+      SpeedPad_23: 567711964
+      SpeedPad_24: 517255985
+      SpeedPad_25: -1805094174
+      SpeedPad_26: 549089805
+      SpeedPad_27: -1396290636
+      SpeedPad_28: -2075037219
+      SpeedPad_29: -15050726
+      SpeedPad_3: -369022514
+      SpeedPad_30: -888381841
+      SpeedPad_31: 1332405119
+      SpeedPad_32: 1637472696
+      SpeedPad_33: 557106685
+      SpeedPad_34: 50625694
+      SpeedPad_4: 1221842462
+      SpeedPad_5: -1679929879
+      SpeedPad_6: -406370226
+      SpeedPad_7: -28141049
+      SpeedPad_8: -1719194824
+      SpeedPad_9: -264392893
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -6,7 +6,7 @@ TextureImporter:
   serializedVersion: 12
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -37,13 +37,13 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -52,9 +52,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -108,18 +108,942 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: FlipPad_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3840
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c14185e34ec5a0f40beb0aabc37f8911
+      internalID: -392281020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlipPad_1
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 3840
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfb20621eb8f9ef4d9ee245cf8084c73
+      internalID: -913661473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlipPad_2
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 3840
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 261a7a3c4b924174e95bf75b5cee78f2
+      internalID: 1327606669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlipPad_3
+      rect:
+        serializedVersion: 2
+        x: 3498
+        y: 3840
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86f94a74046fb6c4ebc95cb6a2810421
+      internalID: 1609786868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlipPad_4
+      rect:
+        serializedVersion: 2
+        x: 4664
+        y: 3840
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa6297dbfdb5fdb4e94ca03a1585069d
+      internalID: 1607906491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlipPad_5
+      rect:
+        serializedVersion: 2
+        x: 5830
+        y: 3840
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb1a81a8885b6db4480c9a9ca0fe08a3
+      internalID: 1456727221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlipPad_6
+      rect:
+        serializedVersion: 2
+        x: 6996
+        y: 3840
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64daf46090f7faa4c87e68b326e3ad39
+      internalID: 436047625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlipPad_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3072
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 998991f9d8f2222479d983bfbe910a76
+      internalID: -1092677416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlipPad_8
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 3072
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9e24c35c5845984dad609eaddb6a8d7
+      internalID: -1108091420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlipPad_9
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 3072
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6aa05dfb4100404d88d690ac3dc22ff
+      internalID: 2146982329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlipPad_10
+      rect:
+        serializedVersion: 2
+        x: 3498
+        y: 3072
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b39ddfae0828594b8d6349f3e69f070
+      internalID: -658281067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlipPad_11
+      rect:
+        serializedVersion: 2
+        x: 4664
+        y: 3072
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca9fd0f8c61c2cd43957da29925ea4c9
+      internalID: 2137794702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlipPad_12
+      rect:
+        serializedVersion: 2
+        x: 5830
+        y: 3072
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9983c06c906a2c847b17206f87b5a471
+      internalID: -149613161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlipPad_13
+      rect:
+        serializedVersion: 2
+        x: 6996
+        y: 3072
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e783791a17db7e4a8c69c3ba79c2e56
+      internalID: 1700293338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlipPad_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2304
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb639bacdacc24143b1a2618bd388b11
+      internalID: -249899670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlipPad_15
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 2304
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a85174cccf2410145bb88dcf0e72d559
+      internalID: -67581353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlipPad_16
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 2304
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1394ae0802c43834bbd4510ccd5b396d
+      internalID: -1995390010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlipPad_17
+      rect:
+        serializedVersion: 2
+        x: 3498
+        y: 2304
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b6b25aecf602864aa63e4924a84472e
+      internalID: -712417726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlipPad_18
+      rect:
+        serializedVersion: 2
+        x: 4664
+        y: 2304
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4daa7026e3b42024999f307a25134c42
+      internalID: 1684195069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlipPad_19
+      rect:
+        serializedVersion: 2
+        x: 5830
+        y: 2304
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27201fb6196b4ff48856482278172ad5
+      internalID: 1260783532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlipPad_20
+      rect:
+        serializedVersion: 2
+        x: 6996
+        y: 2304
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d79787b9064965a43aca901e63c4a0da
+      internalID: 520432824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlipPad_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1536
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f52568569023934dbf12544944492d5
+      internalID: -1535455166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlipPad_22
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 1536
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8951a7dbbfd97cd43ae799f9032038b9
+      internalID: 1473939780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlipPad_23
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 1536
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 668e642630d8bd2439b17dd55d4ab6ff
+      internalID: -1344124345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlipPad_24
+      rect:
+        serializedVersion: 2
+        x: 3498
+        y: 1536
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85da9d106b560874bab358f2bc671e41
+      internalID: -480724878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlipPad_25
+      rect:
+        serializedVersion: 2
+        x: 4664
+        y: 1536
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6085be803507ce6469661428fda1e398
+      internalID: 1162966524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlipPad_26
+      rect:
+        serializedVersion: 2
+        x: 5830
+        y: 1536
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b346374001a4fb04ab9262e78e054308
+      internalID: -1387425363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlipPad_27
+      rect:
+        serializedVersion: 2
+        x: 6996
+        y: 1536
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f010fd9ee48f06e499f9c4058417984c
+      internalID: -1041034568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlipPad_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0aef9856cfc1e7449bff5e638d40d5a
+      internalID: -2063677778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlipPad_29
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 768
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e626094d467b4704784f2018c5f49bdf
+      internalID: -651640651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlipPad_30
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 768
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8338384a2de156349b7d229c3d309050
+      internalID: -1122358356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlipPad_31
+      rect:
+        serializedVersion: 2
+        x: 3498
+        y: 768
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 776cac035be2bee48ac01d6685139b1d
+      internalID: -170753682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlipPad_32
+      rect:
+        serializedVersion: 2
+        x: 4664
+        y: 768
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa9fb0b8dd075f94da2f11ae0ac13ed4
+      internalID: -1499052625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlipPad_33
+      rect:
+        serializedVersion: 2
+        x: 5830
+        y: 768
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d8111a2f20e30741b3556c9c9cea9e6
+      internalID: 202519046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlipPad_34
+      rect:
+        serializedVersion: 2
+        x: 6996
+        y: 768
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a8949da134a6bb46b9a2fa139aa3adb
+      internalID: -634714762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlipPad_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca386b54db7f5cb49863307a127b093a
+      internalID: -149300203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlipPad_36
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 0
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 582d451bdd076c941a6eec60367b393f
+      internalID: 170925322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlipPad_37
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 0
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62f87b8fae8c2414eb3d4928397bc554
+      internalID: 2061426065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlipPad_38
+      rect:
+        serializedVersion: 2
+        x: 3498
+        y: 0
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e27e065759cc1f40a80c424343b2b9d
+      internalID: -885971050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlipPad_39
+      rect:
+        serializedVersion: 2
+        x: 4664
+        y: 0
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e793e7cf40a08084b8113864558b5c80
+      internalID: -2142283928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlipPad_40
+      rect:
+        serializedVersion: 2
+        x: 5830
+        y: 0
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7576f65614f69d4469e0bd80bdf47cec
+      internalID: 948521087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlipPad_41
+      rect:
+        serializedVersion: 2
+        x: 6996
+        y: 0
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 312919822069c654e92be3ab3e8c120e
+      internalID: 1834244672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f7841b0cd0988824b899c2234606c5a2
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      FlipPad_0: -392281020
+      FlipPad_1: -913661473
+      FlipPad_10: -658281067
+      FlipPad_11: 2137794702
+      FlipPad_12: -149613161
+      FlipPad_13: 1700293338
+      FlipPad_14: -249899670
+      FlipPad_15: -67581353
+      FlipPad_16: -1995390010
+      FlipPad_17: -712417726
+      FlipPad_18: 1684195069
+      FlipPad_19: 1260783532
+      FlipPad_2: 1327606669
+      FlipPad_20: 520432824
+      FlipPad_21: -1535455166
+      FlipPad_22: 1473939780
+      FlipPad_23: -1344124345
+      FlipPad_24: -480724878
+      FlipPad_25: 1162966524
+      FlipPad_26: -1387425363
+      FlipPad_27: -1041034568
+      FlipPad_28: -2063677778
+      FlipPad_29: -651640651
+      FlipPad_3: 1609786868
+      FlipPad_30: -1122358356
+      FlipPad_31: -170753682
+      FlipPad_32: -1499052625
+      FlipPad_33: 202519046
+      FlipPad_34: -634714762
+      FlipPad_35: -149300203
+      FlipPad_36: 170925322
+      FlipPad_37: 2061426065
+      FlipPad_38: -885971050
+      FlipPad_39: -2142283928
+      FlipPad_4: 1607906491
+      FlipPad_40: 948521087
+      FlipPad_41: 1834244672
+      FlipPad_5: 1456727221
+      FlipPad_6: 436047625
+      FlipPad_7: -1092677416
+      FlipPad_8: -1108091420
+      FlipPad_9: 2146982329
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

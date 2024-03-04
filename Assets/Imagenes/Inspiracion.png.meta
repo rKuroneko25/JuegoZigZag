@@ -382,6 +382,90 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Inspiracion_1
+      rect:
+        serializedVersion: 2
+        x: 2861
+        y: 1148
+        width: 151
+        height: 152
+      alignment: 9
+      pivot: {x: -2.267208, y: 4.104261}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 753ef705dbe92a740b6151f851ef3bc0
+      internalID: -136532733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspiracion_2
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 1099
+        width: 302
+        height: 311
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d07de1676aa48044a5a6eb8fb5bb73c
+      internalID: -1236966623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspiracion_3
+      rect:
+        serializedVersion: 2
+        x: 1315
+        y: 56
+        width: 238
+        height: 244
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2b82c3c43ebc8742af05dacf45137f3
+      internalID: -1429603389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspiracion_4
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 2157
+        width: 234
+        height: 241
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baa450aa0846ae14fae0d0eb66360188
+      internalID: 66120506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -400,6 +484,10 @@ TextureImporter:
       Flecha: 411653934
       Incredible: -1109913253
       Inspiracion_0: 1737587795
+      Inspiracion_1: -136532733
+      Inspiracion_2: -1236966623
+      Inspiracion_3: -1429603389
+      Inspiracion_4: 66120506
       Level complete: -1243513510
       Palito: -1514042403
       Palo abajo: 1133220262

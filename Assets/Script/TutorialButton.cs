@@ -2,11 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
-public class NextTutorial : MonoBehaviour
+public class TutorialButton : MonoBehaviour
 {
-    public GameObject Tut1;
-    public GameObject Tut2;
     public GameObject fade;
     private Animator animator;
 
@@ -30,8 +29,16 @@ public class NextTutorial : MonoBehaviour
 
     void TaskOnClick()
     {
-        Tut1.SetActive(false);
-        Tut2.SetActive(true);
+        fade.SetActive(true);
+        animator.SetTrigger("FadeInT");
+        StartCoroutine(LoadScene());
+    }
+
+    IEnumerator LoadScene()
+    {
+        FindObjectOfType<AudioManager>().Stop("Tutorial");
+        yield return new WaitForSeconds(0.5f);
+        SceneManager.LoadScene("Level");
     }
 
 }

@@ -56,6 +56,7 @@ public class JugadorBola : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        PlayerPrefs.SetInt("Quieto", 0);
         Nivel = PlayerPrefs.GetString("LevelSelected");
         Clicks = PlayerPrefs.GetInt("ClicksNow");
         Attempts = PlayerPrefs.GetInt("AttemptsNow");
@@ -70,9 +71,11 @@ public class JugadorBola : MonoBehaviour
         quietomanin = false;
         if(PlayerPrefs.GetInt("Fade") == 1)
         {
+            fade.SetActive(true);
             animator = fade.GetComponent<Animator>();
             animator.SetTrigger("FadeOutT");
             PlayerPrefs.SetInt("Fade", 0);
+            StartCoroutine(FadeOut());
         }
 
         if (Nivel == "0") { //Arcade
@@ -84,6 +87,12 @@ public class JugadorBola : MonoBehaviour
             FindObjectOfType<AudioManager>().Play("Level" + Nivel);
             CargaNivel();
         }
+    }
+
+    IEnumerator FadeOut()
+    {
+        yield return new WaitForSeconds(0.5f);
+        fade.SetActive(false);
     }
 
     void CrearSueloInical()
@@ -110,25 +119,26 @@ public class JugadorBola : MonoBehaviour
         }
 
         camara.transform.position = new Vector3(transform.position.x, 0, transform.position.z) + offset;
-        if (!quietomanin) {
-            if(!Saltando){
-                transform.Translate(Direccion * Velocidad * Time.deltaTime, Space.World);
-            
-                if(Input.GetKeyUp(KeyCode.Mouse0))
-                {
-                    Clicks += 1;
-                    if(!Saltar){
-                        CambiarDireccion();
-                        StartCoroutine(girar());     
-                    }
-                    else{
-                        Saltando = true;
-                        StartCoroutine(jumpPad(JUMPAD)); 
-                    }
-                } 
+        if(PlayerPrefs.GetInt("Quieto") == 0){
+            if (!quietomanin) {
+                if(!Saltando){
+                    transform.Translate(Direccion * Velocidad * Time.deltaTime, Space.World);
+                
+                    if(Input.GetKeyUp(KeyCode.Mouse0))
+                    {
+                        Clicks += 1;
+                        if(!Saltar){
+                            CambiarDireccion();
+                            StartCoroutine(girar());     
+                        }
+                        else{
+                            Saltando = true;
+                            StartCoroutine(jumpPad(JUMPAD)); 
+                        }
+                    } 
+                }
             }
         }
-
       
     }
 
