@@ -466,6 +466,111 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: icon_ez
+      rect:
+        serializedVersion: 2
+        x: 3378
+        y: 499
+        width: 117
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de3b39152f9fa8e4d8c644e86dd19fe9
+      internalID: -1002595492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_facilito
+      rect:
+        serializedVersion: 2
+        x: 3620
+        y: 485
+        width: 119
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d8491e174bf156478e761878bffd9d3
+      internalID: 571679842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_seponeserio
+      rect:
+        serializedVersion: 2
+        x: 3862
+        y: 481
+        width: 118
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 624e779a08564d54b9c5f1fb7bbabcaa
+      internalID: 629145246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_uyuyuy
+      rect:
+        serializedVersion: 2
+        x: 3378
+        y: 377
+        width: 118
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96158d46b51896349827b8ca648dcf23
+      internalID: -569474955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_demon
+      rect:
+        serializedVersion: 2
+        x: 1839
+        y: 654
+        width: 141
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d72f22e58eea2343997f3151a94fa23
+      internalID: -148726681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -494,6 +599,11 @@ TextureImporter:
       Palo arriba: 256366489
       Patras: 2046330665
       Salir: -1680912795
+      icon_demon: -148726681
+      icon_ez: -1002595492
+      icon_facilito: 571679842
+      icon_seponeserio: 629145246
+      icon_uyuyuy: -569474955
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

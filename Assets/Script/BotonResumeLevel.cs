@@ -16,7 +16,7 @@ public class BotonResumeLevel : MonoBehaviour
     
     void TaskOnClick()
     {   
-        FindObjectOfType<AudioManager>().UnPause("Level"+PlayerPrefs.GetString("LevelSelected"));
+        FindObjectOfType<AudioManager>().UnPause("Level"+PlayerPrefs.GetString("LevelSelectedString"));
         PlayerPrefs.SetInt("Quieto",0);
         GUI.SetActive(true);
         PauseInt.SetActive(false);

@@ -43,6 +43,7 @@ public class TIraPaLaIzq : MonoBehaviour
             PlayerPrefs.SetInt("Direccion", Direccion);
             level--;
             PlayerPrefs.SetInt("LevelSelected", level);
+            PlayerPrefs.SetString("LevelSelectedString", level.ToString());
             animator.SetTrigger("Izquierda");
             StartCoroutine(CambiaColor());
         }

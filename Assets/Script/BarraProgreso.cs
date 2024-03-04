@@ -7,14 +7,14 @@ public class BarraProgreso : MonoBehaviour
     //private float elapsedTime = 0f;
     public Image progressBarImage;
     public Text progressText;
-    // public Image progressBarImageBest;
-    // public Text progressTextBest;
+    public Image progressBarImageBest;
+    public Text progressTextBest;
     private string Nivel;
     private float maxValue;
 
     void Start()
     {
-        Nivel = PlayerPrefs.GetString("LevelSelected");
+        Nivel = PlayerPrefs.GetString("LevelSelectedString");
         switch (Nivel){
             case "1":
                 //duration = 87f;
@@ -85,10 +85,5 @@ public class BarraProgreso : MonoBehaviour
         progressBarImage.fillAmount = fillAmount;
         float percentage = fillAmount * 100f;
         progressText.text = percentage.ToString("F0") + "%";
-
-        // //Barra pausa
-        // float bestValue = PlayerPrefs.GetFloat("Progress"+Nivel);
-        // progressBarImageBest.fillAmount = bestValue;
-        // progressTextBest.text = (bestValue * 100f).ToString("F0") + "%";
     }
 }

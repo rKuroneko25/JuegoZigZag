@@ -42,6 +42,7 @@ public class TIrapaLaDer : MonoBehaviour
             PlayerPrefs.SetInt("Direccion", Direccion);
             level++;
             PlayerPrefs.SetInt("LevelSelected", level);
+            PlayerPrefs.SetString("LevelSelectedString", level.ToString());
             animator.SetTrigger("Derecha");
             StartCoroutine(CambiaColor());
         }

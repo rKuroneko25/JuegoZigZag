@@ -30,7 +30,7 @@ public class StartLevel : MonoBehaviour
         animator.SetTrigger("FadeInT");
         PlayerPrefs.SetInt("Fade", 1);
         yield return new WaitForSeconds(1);
-        PlayerPrefs.SetString("LevelSelected", level[5].ToString());
+        PlayerPrefs.SetString("LevelSelectedString", level[5].ToString());
         PlayerPrefs.SetInt("ClicksNow",0);
         PlayerPrefs.SetInt("AttemptsNow",1);
         SceneManager.LoadScene("Tutorial"+level[5]);

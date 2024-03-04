@@ -22,6 +22,7 @@ public class SelectorNivel : MonoBehaviour
         StartCoroutine(QuitaFade());
 
         PlayerPrefs.SetInt("LevelSelected", 1);
+        PlayerPrefs.SetString("LevelSelectedString", "1");
         PlayerPrefs.SetInt("Direccion", 0);
     }
 
