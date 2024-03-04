@@ -71,14 +71,8 @@ public class JugadorBola : MonoBehaviour
         Bifurcacion = 0;
         quietomanin = false;
         cuentaPads = 0;
-        if(PlayerPrefs.GetInt("Fade") == 1)
-        {
-            fade.SetActive(true);
-            animator = fade.GetComponent<Animator>();
-            animator.SetTrigger("FadeOutT");
-            PlayerPrefs.SetInt("Fade", 0);
-            StartCoroutine(FadeOut());
-        }
+        
+        Physics.gravity = new Vector3(0, -9.81f, 0);
 
         if (Nivel == "0") { //Arcade
             CrearSueloInical();
@@ -89,12 +83,6 @@ public class JugadorBola : MonoBehaviour
             FindObjectOfType<AudioManager>().Play("Level" + Nivel);
             CargaNivel();
         }
-    }
-
-    IEnumerator FadeOut()
-    {
-        yield return new WaitForSeconds(0.5f);
-        fade.SetActive(false);
     }
 
     void CrearSueloInical()
