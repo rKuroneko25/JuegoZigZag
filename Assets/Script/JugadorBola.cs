@@ -117,6 +117,14 @@ public class JugadorBola : MonoBehaviour
         {
             Muerte();
         }
+        if(PlayerPrefs.GetInt("Clic") == 1)
+        {
+            if(!Saltar){
+                CambiarDireccion();
+                StartCoroutine(girar());     
+            }
+            PlayerPrefs.SetInt("Clic", 0);
+        }
 
         camara.transform.position = new Vector3(transform.position.x, 0, transform.position.z) + offset;
         if(PlayerPrefs.GetInt("Quieto") == 0){

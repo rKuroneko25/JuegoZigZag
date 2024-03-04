@@ -469,7 +469,7 @@ MonoBehaviour:
     source: {fileID: 0}
     volume: 0.5
     loop: 0
-  - name: Quit level
+  - name: QuitLevel
     clip: {fileID: 8300000, guid: 362ba1ca435c29145b7cbe3b2fd3b365, type: 3}
     source: {fileID: 0}
     volume: 0.5

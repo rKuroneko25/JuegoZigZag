@@ -18,6 +18,7 @@ public class BotonResumeLevel : MonoBehaviour
     {   
         FindObjectOfType<AudioManager>().UnPause("Level"+PlayerPrefs.GetString("LevelSelected"));
         PlayerPrefs.SetInt("Quieto",0);
+        PlayerPrefs.SetInt("Clic",1);
         GUI.SetActive(true);
         PauseInt.SetActive(false);
     }
