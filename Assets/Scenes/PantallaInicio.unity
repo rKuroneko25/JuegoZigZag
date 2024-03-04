@@ -509,6 +509,11 @@ MonoBehaviour:
     source: {fileID: 0}
     volume: 0.5
     loop: 0
+  - name: Tutorial
+    clip: {fileID: 8300000, guid: cbeb910538108144298550ccfc11abea, type: 3}
+    source: {fileID: 0}
+    volume: 0.5
+    loop: 1
   - name: Arcade
     clip: {fileID: 8300000, guid: a7c9fb1168d0b7141aed405171118d84, type: 3}
     source: {fileID: 0}

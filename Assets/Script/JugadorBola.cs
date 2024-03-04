@@ -23,8 +23,8 @@ public class JugadorBola : MonoBehaviour
     public float Velocidad = 15f;
     public Text timerText;
     public Text scoreText;
-    public Text attemptsText;
     public GameObject fade;
+    public Text attemptsText;
 
     //PRIVADAS
     private Vector3 offset;
