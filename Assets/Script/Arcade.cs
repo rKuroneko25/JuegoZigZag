@@ -31,6 +31,7 @@ public class Arcade : MonoBehaviour
         FindObjectOfType<AudioManager>().Play("StartLevel");
         FindObjectOfType<AudioManager>().Stop("Menu");
         yield return new WaitForSeconds(1f);
+        FindObjectOfType<AudioManager>().Play("Arcade");
         PlayerPrefs.SetString("LevelSelected", "0");
         SceneManager.LoadScene("Arcade");
     }
