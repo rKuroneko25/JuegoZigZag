@@ -3,12 +3,12 @@ using UnityEngine.UI;
 
 public class BarraProgreso : MonoBehaviour
 {
-    private float duration;
-    private float elapsedTime = 0f;
+    //private float duration;
+    //private float elapsedTime = 0f;
     public Image progressBarImage;
     public Text progressText;
-    public Image progressBarImageBest;
-    public Text progressTextBest;
+    // public Image progressBarImageBest;
+    // public Text progressTextBest;
     private string Nivel;
     private float maxValue;
 
@@ -17,24 +17,24 @@ public class BarraProgreso : MonoBehaviour
         Nivel = PlayerPrefs.GetString("LevelSelected");
         switch (Nivel){
             case "1":
-                duration = 87f; //236 casillas
-                maxValue = 236f;
+                //duration = 87f;
+                maxValue = 220f;
                 break;
             case "2":
-                duration = 100f; //299
-                maxValue = 299f;
+                //duration = 100f;
+                maxValue = 305f;
                 break;
             case "3":
-                duration = 97f; //281
-                maxValue = 281f;
+                //duration = 97f;
+                maxValue = 288f;
                 break;
             case "4":   
-                duration = 85f; //219
-                maxValue = 219f;
+                //duration = 85f;
+                maxValue = 224f;
                 break;
             case "5":
-                duration = 93f; //219
-                maxValue = 219f;
+                //duration = 93f;
+                maxValue = 222f;
                 break;
         }
     }
@@ -81,10 +81,14 @@ public class BarraProgreso : MonoBehaviour
         if (PlayerPrefs.GetFloat("Progress"+Nivel) < fillAmount) {
             PlayerPrefs.SetFloat("Progress"+Nivel, fillAmount);
         }
-        
+        //Barra actual
         progressBarImage.fillAmount = fillAmount;
-
         float percentage = fillAmount * 100f;
         progressText.text = percentage.ToString("F0") + "%";
+
+        // //Barra pausa
+        // float bestValue = PlayerPrefs.GetFloat("Progress"+Nivel);
+        // progressBarImageBest.fillAmount = bestValue;
+        // progressTextBest.text = (bestValue * 100f).ToString("F0") + "%";
     }
 }
