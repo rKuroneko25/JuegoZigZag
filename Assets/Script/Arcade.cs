@@ -27,6 +27,7 @@ public class Arcade : MonoBehaviour
     {
         fade.SetActive(true);
         animator.SetTrigger("FadeInT");
+        PlayerPrefs.SetInt("Fade", 1);
         FindObjectOfType<AudioManager>().Play("StartLevel");
         FindObjectOfType<AudioManager>().Stop("Menu");
         yield return new WaitForSeconds(1f);

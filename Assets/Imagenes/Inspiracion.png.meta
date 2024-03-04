@@ -178,11 +178,11 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 3177
-        width: 1557
+        width: 1555
         height: 144
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 1, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -340,6 +340,48 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Inspiracion_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3012
+        width: 1502
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 137fea07d649d7d41aeab382eec5a45a
+      internalID: 1737587795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level complete
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3004
+        width: 1502
+        height: 173
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07a8108486ac3324b8d8d51fd01d9209
+      internalID: -1243513510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -357,6 +399,8 @@ TextureImporter:
       Corner: -2049977083
       Flecha: 411653934
       Incredible: -1109913253
+      Inspiracion_0: 1737587795
+      Level complete: -1243513510
       Palito: -1514042403
       Palo abajo: 1133220262
       Palo arriba: 256366489

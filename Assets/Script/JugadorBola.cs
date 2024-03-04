@@ -24,6 +24,7 @@ public class JugadorBola : MonoBehaviour
     public Text timerText;
     public Text scoreText;
     public Text attemptsText;
+    public GameObject fade;
 
     //PRIVADAS
     private Vector3 offset;
@@ -50,6 +51,7 @@ public class JugadorBola : MonoBehaviour
     private int score;
     private float timer;
     private bool quietomanin;
+    private Animator animator;
 
     // Start is called before the first frame update
     void Start()
@@ -66,6 +68,13 @@ public class JugadorBola : MonoBehaviour
         speedDelay = false;
         Bifurcacion = 0;
         quietomanin = false;
+        if(PlayerPrefs.GetInt("Fade") == 1)
+        {
+            animator = fade.GetComponent<Animator>();
+            animator.SetTrigger("FadeOutT");
+            PlayerPrefs.SetInt("Fade", 0);
+        }
+
         if (Nivel == "0") { //Arcade
             CrearSueloInical();
             score = 0;
@@ -457,8 +466,11 @@ public class JugadorBola : MonoBehaviour
                         Instantiate(Borde, new Vector3(ValX+(3*orientacion*(-1)), y, ValZ), Quaternion.identity);
                     }
                     reverso = false;
-                    if (pad[0] == 'F') {ValZ += 6.0f;}
-                    else {ValX += 6.0f * orientacion;}
+                    if (pad[0] == 'F') {
+                        ValZ += 6.0f;
+                    } else {
+                        ValX += 6.0f * orientacion;
+                    }
                 } else {
                     if (pad[0] == 'S') {
                         if(Forward)
