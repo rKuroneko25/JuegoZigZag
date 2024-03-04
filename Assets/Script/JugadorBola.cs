@@ -24,6 +24,7 @@ public class JugadorBola : MonoBehaviour
     public Text timerText;
     public Text scoreText;
     public GameObject fade;
+    public Text attemptsText;
 
     //PRIVADAS
     private Vector3 offset;
@@ -100,6 +101,8 @@ public class JugadorBola : MonoBehaviour
             timer += Time.deltaTime;
             timerText.text = "Time: " + timer.ToString("F2");
             scoreText.text = "Score: " + score;
+        } else {
+            attemptsText.text = "Attempt " + Attempts;
         }
         if(transform.position.y < 0.50  || transform.position.y > 9.50)
         {
@@ -580,37 +583,9 @@ public class JugadorBola : MonoBehaviour
         StartCoroutine(DesplazarHaciaCentro(centro));
         
         //Guardar la informacion (para la "i" de Level Selector)
-        switch (Nivel)
-        {
-            case "1":
-                PlayerPrefs.SetInt("Clicks1", Clicks + PlayerPrefs.GetInt("Clicks1"));
-                PlayerPrefs.SetInt("Attemps1", Attempts + PlayerPrefs.GetInt("Attemps1"));
-                break;
-
-            case "2":
-                PlayerPrefs.SetInt("Clicks2", Clicks + PlayerPrefs.GetInt("Clicks2"));
-                PlayerPrefs.SetInt("Attemps2", Attempts + PlayerPrefs.GetInt("Attemps2"));
-                break;
-
-            case "3":
-                PlayerPrefs.SetInt("Clicks3", Clicks + PlayerPrefs.GetInt("Clicks3"));
-                PlayerPrefs.SetInt("Attemps3", Attempts + PlayerPrefs.GetInt("Attemps3"));
-                break;
-
-            case "4":
-                PlayerPrefs.SetInt("Clicks4", Clicks + PlayerPrefs.GetInt("Clicks4"));
-                PlayerPrefs.SetInt("Attemps4", Attempts + PlayerPrefs.GetInt("Attemps4"));
-                break;
-
-            case "5":
-                PlayerPrefs.SetInt("Clicks5", Clicks + PlayerPrefs.GetInt("Clicks5"));
-                PlayerPrefs.SetInt("Attemps5", Attempts + PlayerPrefs.GetInt("Attemps5"));
-                break;
-
-            default:
-                break;
-        }
-        //Parar la bola en el centro de la meta
+        PlayerPrefs.SetInt("Clicks"+Nivel, Clicks + PlayerPrefs.GetInt("Clicks"+Nivel));
+        PlayerPrefs.SetInt("Attemps"+Nivel, Attempts + PlayerPrefs.GetInt("Attemps"+Nivel));
+        
         //Poppear LevelComplete y la musica Win
         //Poppear resultados -> Level Complete / Clicks: / Attempts: 
     }
