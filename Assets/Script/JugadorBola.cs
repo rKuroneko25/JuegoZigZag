@@ -52,6 +52,7 @@ public class JugadorBola : MonoBehaviour
     private float timer;
     private bool quietomanin;
     private Animator animator;
+    private int cuentaPads;
 
     // Start is called before the first frame update
     void Start()
@@ -68,6 +69,7 @@ public class JugadorBola : MonoBehaviour
         speedDelay = false;
         Bifurcacion = 0;
         quietomanin = false;
+        cuentaPads = 0;
         if(PlayerPrefs.GetInt("Fade") == 1)
         {
             animator = fade.GetComponent<Animator>();
@@ -106,7 +108,11 @@ public class JugadorBola : MonoBehaviour
         }
         if(transform.position.y < 0.50  || transform.position.y > 9.50)
         {
-            Muerte();
+            if (Nivel == "0") {
+                GameOver();
+            } else {
+                Muerte();
+            }
         }
 
         camara.transform.position = new Vector3(transform.position.x, 0, transform.position.z) + offset;
@@ -165,6 +171,8 @@ public class JugadorBola : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
+        cuentaPads += 1;
+        PlayerPrefs.SetInt("CuentaPads", cuentaPads);
         if(other.gameObject.tag == "Jump")
         {
             Saltar = true;
@@ -185,7 +193,10 @@ public class JugadorBola : MonoBehaviour
 
         if(other.gameObject.tag == "Borde")
         {
-            Muerte();
+            if (Nivel == "0")
+                GameOver();
+            else
+                Muerte();
         }
         if(other.gameObject.tag == "Guia")
         {
@@ -565,9 +576,27 @@ public class JugadorBola : MonoBehaviour
         Invoke("SceneLoad", 1f);
     }
 
+    void GameOver()
+    {
+        PlayerPrefs.SetInt("Score", score);
+        if (score > PlayerPrefs.GetInt("HighScore"))
+            PlayerPrefs.SetInt("HighScore", score);
+        PlayerPrefs.SetFloat("Time", timer);
+        GameObject.Find("Jugador").SetActive(false);
+        FindObjectOfType<AudioManager>().Stop("Arcade");
+        FindObjectOfType<AudioManager>().Play("Death");
+        if (flip) {Physics.gravity *= -1;}
+        Invoke("SceneLoad", 1f);
+    }
+
     void SceneLoad()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name); 
+        if (Nivel == "0") {
+            FindObjectOfType<AudioManager>().Play("GameOver");
+            SceneManager.LoadScene("Game Over");
+        }
+        else
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name); 
     }
 
     void Meta(GameObject coso)
@@ -608,9 +637,9 @@ public class JugadorBola : MonoBehaviour
         if (orientacion == -1) {rm = 1;}
         if (sonic) {sm = 1;}
 
-        if (coso.tag == "Suelo") {score += 1 * (System.Math.Max(fm*3,1)) * (System.Math.Max(rm*3,1)) * (System.Math.Max(sm*2,1));}
-        if (coso.tag == "Bifurcation") {score += 10 * (System.Math.Max(fm*3,1)) * (System.Math.Max(rm*3,1)) * (System.Math.Max(sm*2,1));}
-        if (coso.tag == "Jump") {score += 30 * (System.Math.Max(fm*3,1)) * (System.Math.Max(rm*3,1)) * (System.Math.Max(sm*2,1));}
+        if (coso.tag == "Suelo") {score += 1 * (System.Math.Max(fm*3,1)) * (System.Math.Max(rm*3,1)) * (System.Math.Max(sm*3,1));}
+        if (coso.tag == "Bifurcation") {score += 10 * (System.Math.Max(fm*3,1)) * (System.Math.Max(rm*3,1)) * (System.Math.Max(sm*3,1));}
+        if (coso.tag == "Jump") {score += 30 * (System.Math.Max(fm*3,1)) * (System.Math.Max(rm*3,1)) * (System.Math.Max(sm*3,1));}
     }
     
 }
