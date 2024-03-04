@@ -52,7 +52,7 @@ public class JugadorBola : MonoBehaviour
     private float timer;
     private bool quietomanin;
     private Animator animator;
-    private int cuentaPads;
+    private float cuentaPads;
 
     // Start is called before the first frame update
     void Start()
@@ -181,8 +181,8 @@ public class JugadorBola : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        cuentaPads += 1;
-        PlayerPrefs.SetInt("CuentaPads", cuentaPads);
+        cuentaPads += 1f;
+        PlayerPrefs.SetFloat("CuentaPads", cuentaPads);
         if(other.gameObject.tag == "Jump")
         {
             Saltar = true;

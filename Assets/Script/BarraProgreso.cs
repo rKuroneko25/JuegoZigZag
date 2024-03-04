@@ -7,6 +7,8 @@ public class BarraProgreso : MonoBehaviour
     private float elapsedTime = 0f;
     public Image progressBarImage;
     public Text progressText;
+    public Image progressBarImageBest;
+    public Text progressTextBest;
     private string Nivel;
     private float maxValue;
 
@@ -64,9 +66,14 @@ public class BarraProgreso : MonoBehaviour
     //     }
     // }
 
+    void Update()
+    {
+        UpdateProgressBar();
+    }
+
     public void UpdateProgressBar()
     {
-        float contador = 50f;//PlayerPrefs.GetFloat("CuentaPads");
+        float contador = PlayerPrefs.GetFloat("CuentaPads");
         float newValue = Mathf.Clamp(contador, 0f, maxValue);
         
         float fillAmount = newValue / maxValue;

@@ -489,7 +489,7 @@ MonoBehaviour:
   Velocidad: 15
   timerText: {fileID: 0}
   scoreText: {fileID: 0}
-  fade: {fileID: 0}
+  fade: {fileID: 1828976696}
   attemptsText: {fileID: 332992613}
 --- !u!54 &178975292
 Rigidbody:
@@ -732,7 +732,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -462.9255, y: 239.72179}
+  m_AnchoredPosition: {x: -462.9255, y: 231}
   m_SizeDelta: {x: 226.2007, y: 52.7782}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &332992613
@@ -756,7 +756,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 9d324259e02569c499706044174821a9, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
@@ -768,7 +768,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Attempt  '
+  m_Text: Attempt 012
 --- !u!222 &332992614
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1075,8 +1075,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 170.9, y: -56.8}
-  m_SizeDelta: {x: 226.2007, y: 52.7782}
+  m_AnchoredPosition: {x: -23, y: 173}
+  m_SizeDelta: {x: 694.8904, y: 265.9924}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &692099821
 MonoBehaviour:
@@ -1099,7 +1099,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 9d324259e02569c499706044174821a9, type: 3}
     m_FontSize: 70
     m_FontStyle: 0
     m_BestFit: 0
@@ -1385,7 +1385,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 200.94635, y: 244.3218}
+  m_AnchoredPosition: {x: 200.94635, y: 238}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1055142873
@@ -1516,7 +1516,7 @@ GameObject:
   - component: {fileID: 1628986872}
   - component: {fileID: 1628986871}
   m_Layer: 5
-  m_Name: Progress (1)
+  m_Name: ProgressBest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1538,7 +1538,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 39, y: 43}
+  m_AnchoredPosition: {x: 39, y: 35}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1628986871
@@ -1562,9 +1562,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 9d324259e02569c499706044174821a9, type: 3}
     m_FontSize: 25
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 200
@@ -1574,7 +1574,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 100%
+  m_Text: 0%
 --- !u!222 &1628986872
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2122,7 +2122,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 9d324259e02569c499706044174821a9, type: 3}
     m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
