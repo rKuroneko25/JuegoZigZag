@@ -1,0 +1,1667 @@
+fileFormatVersion: 2
+guid: dba7de06689b08848b77ddc6224abc24
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: NormalPad_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6912
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8aaafa34f949b34fac4680e7d9f0c69
+      internalID: -2052240061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_1
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 6912
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41c384ccde5ddbe4881eb44545b3a97a
+      internalID: -1509091347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_2
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 6912
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3974ec1b4535b24797e2ea9acd2572c
+      internalID: 1018558156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_3
+      rect:
+        serializedVersion: 2
+        x: 3498
+        y: 6912
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eb06e56b0e51cf4eade90c7630f3a86
+      internalID: -173217738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_4
+      rect:
+        serializedVersion: 2
+        x: 4664
+        y: 6912
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff1a15bbb241e944cae0b523ec5c3472
+      internalID: -1012117750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_5
+      rect:
+        serializedVersion: 2
+        x: 5830
+        y: 6912
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10e9f472dd4e706428ad9d8133285439
+      internalID: 1070163289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_6
+      rect:
+        serializedVersion: 2
+        x: 6996
+        y: 6912
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 198819dc00d57a243b3b8d80b1eff5f5
+      internalID: -154653287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6144
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03f22a7a7d8994b4f8c2dc9098e3362c
+      internalID: -1175029651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_8
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 6144
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 739942871904a3741998241e07fd339a
+      internalID: 2100530007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_9
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 6144
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3444eba0d240e840b887425330d410a
+      internalID: -647940641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_10
+      rect:
+        serializedVersion: 2
+        x: 3498
+        y: 6144
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83bbad9720667794d9614d33e9edba73
+      internalID: 157748829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_11
+      rect:
+        serializedVersion: 2
+        x: 4664
+        y: 6144
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29acb278e4505fd45822528b58a70f30
+      internalID: 825192728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_12
+      rect:
+        serializedVersion: 2
+        x: 5830
+        y: 6144
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30b4839fc92b63c4593faf99228c2a2e
+      internalID: 1664524736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_13
+      rect:
+        serializedVersion: 2
+        x: 6996
+        y: 6144
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac9311d0d3bf82f41a2116341a71f1f3
+      internalID: -393470581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5376
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b4d13e8885b19841919f3a12db5cf9c
+      internalID: -397828943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_15
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 5376
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cc033bef52b46b438c5c993b7a10d85
+      internalID: -1387806047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_16
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 5376
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f65f1901aca31c49b5ae11f2e5b008b
+      internalID: 545594359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_17
+      rect:
+        serializedVersion: 2
+        x: 3498
+        y: 5376
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df8dc02edb20e7a45a64ab539b2ea031
+      internalID: 1062307396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_18
+      rect:
+        serializedVersion: 2
+        x: 4664
+        y: 5376
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9003a5f6c17a1474fa13439965f21e56
+      internalID: 1961716452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_19
+      rect:
+        serializedVersion: 2
+        x: 5830
+        y: 5376
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c9d2addb8ddfad4b80cc7c19b9b7b8b
+      internalID: -718403935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_20
+      rect:
+        serializedVersion: 2
+        x: 6996
+        y: 5376
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90ce0cb8c023f6242832d41869bd271b
+      internalID: 1518495597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4608
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 535380d62c1051749b66760b0cb85ccd
+      internalID: -1356069546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_22
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 4608
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8903c5afbbd084043a8e01f45560b707
+      internalID: -1339748767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_23
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 4608
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dca71fcd577e94548bf29566378892b2
+      internalID: -2120513481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_24
+      rect:
+        serializedVersion: 2
+        x: 3498
+        y: 4608
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82b26ba5972c5c94993903344a988bd3
+      internalID: -41155856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_25
+      rect:
+        serializedVersion: 2
+        x: 4664
+        y: 4608
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59dbf0a2f5500524ebefe9e2ce6a063a
+      internalID: -479417276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_26
+      rect:
+        serializedVersion: 2
+        x: 5830
+        y: 4608
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 069e44b845e5c9640a70d7f47a847ffc
+      internalID: -1643076333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_27
+      rect:
+        serializedVersion: 2
+        x: 6996
+        y: 4608
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 167ad9ea48781a845a23f9315fe35159
+      internalID: -451667003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3840
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29bd484a4533e7a40b8d837ae59f659a
+      internalID: -1805644864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_29
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 3840
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7559945b40a62004493a2fc9f4837395
+      internalID: 1858970884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_30
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 3840
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dde595898ada0640bb8b50f84c7d2ac
+      internalID: 891912259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_31
+      rect:
+        serializedVersion: 2
+        x: 3498
+        y: 3840
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d607c69800814ee40bfef7e9a3254a09
+      internalID: -661139909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_32
+      rect:
+        serializedVersion: 2
+        x: 4664
+        y: 3840
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d48df658c027d6144ae193dfa223609f
+      internalID: -1418025749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_33
+      rect:
+        serializedVersion: 2
+        x: 5830
+        y: 3840
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dee8fb5eb90a864bbccba318babec2f
+      internalID: -1042946137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_34
+      rect:
+        serializedVersion: 2
+        x: 6996
+        y: 3840
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e669125a758bfb468dfd4a58c3db47e
+      internalID: -1971073134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3072
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 144137733d643f14e9de10cd978dfa39
+      internalID: 817373761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_36
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 3072
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e425ef128ec493f45aa01830194603ae
+      internalID: 1263880406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_37
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 3072
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3fc47d2dea681c4a93c6bf3c1b947fa
+      internalID: 958057338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_38
+      rect:
+        serializedVersion: 2
+        x: 3498
+        y: 3072
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b718f07b6333cb04ca4b4ae71a050778
+      internalID: -1134028764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_39
+      rect:
+        serializedVersion: 2
+        x: 4664
+        y: 3072
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccd304edab492364b8f0c82d9be6afc6
+      internalID: 1667051992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_40
+      rect:
+        serializedVersion: 2
+        x: 5830
+        y: 3072
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd91e21c576dc014ea3003056867a80e
+      internalID: -324510551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_41
+      rect:
+        serializedVersion: 2
+        x: 6996
+        y: 3072
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04e7cd8d9e796de47931091b94f4116c
+      internalID: 1359270867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2304
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d9fca0c5578ccf448ff3c9fa1f2faf1
+      internalID: 1175662579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_43
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 2304
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 193b010e5e09f5e45b5de5eb85096855
+      internalID: 612207953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_44
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 2304
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7382dc3bb37f7cb4d9f22b41c6086bcd
+      internalID: -1945000539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_45
+      rect:
+        serializedVersion: 2
+        x: 3498
+        y: 2304
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d48c0c12a5a578a41bb1e57c11ef6173
+      internalID: -692244865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_46
+      rect:
+        serializedVersion: 2
+        x: 4664
+        y: 2304
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fe2ae8800b937b4297db904bf8dd99c
+      internalID: 143464065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_47
+      rect:
+        serializedVersion: 2
+        x: 5830
+        y: 2304
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de3966086ad204c42b7ec9e6c71f1154
+      internalID: 1063836897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_48
+      rect:
+        serializedVersion: 2
+        x: 6996
+        y: 2304
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af55ef093627c2f40a36c04a46fc675b
+      internalID: -1712648835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1536
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 133df6d5566052344bfb75d324d5c5bd
+      internalID: -1554976802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_50
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 1536
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6000ceeb95c05c489f94abd02c10c89
+      internalID: 1965047916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_51
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 1536
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 095c3a895ec58f845b47af4fba72dedf
+      internalID: 221524383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_52
+      rect:
+        serializedVersion: 2
+        x: 3498
+        y: 1536
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31cb7371c2d21cc44a63494efde72d23
+      internalID: 1256182304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_53
+      rect:
+        serializedVersion: 2
+        x: 4664
+        y: 1536
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d055e18e50a054b439cfe6f564684ade
+      internalID: 812541989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_54
+      rect:
+        serializedVersion: 2
+        x: 5830
+        y: 1536
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11f4b13f26d199a40ad623da70a2e2b2
+      internalID: -254602384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_55
+      rect:
+        serializedVersion: 2
+        x: 6996
+        y: 1536
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f6555f07d5bb48408b89aa014ed15e8
+      internalID: -905142042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 353ab43a3475d9443a1353154f55723b
+      internalID: -1610701201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_57
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 768
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dcb81c709f46864d9f36f42bb10b9f5
+      internalID: -267011435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_58
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 768
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e73e9448fbe22f9408435162257d1cee
+      internalID: 1768636563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_59
+      rect:
+        serializedVersion: 2
+        x: 3498
+        y: 768
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b46e4828e400d624a84e1c629a63395c
+      internalID: 1149987698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_60
+      rect:
+        serializedVersion: 2
+        x: 4664
+        y: 768
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f03ff904703eb6d48a3c96ccac57e817
+      internalID: -646346778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_61
+      rect:
+        serializedVersion: 2
+        x: 5830
+        y: 768
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d57ea5d9d0ff0d2478e0d17348af4bdf
+      internalID: -13626685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_62
+      rect:
+        serializedVersion: 2
+        x: 6996
+        y: 768
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78f9c60558dcb3045bc32b160c6cb54c
+      internalID: -970730729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c48b73af9a60ea84ebc1be91e142913f
+      internalID: -163586787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_64
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 0
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4645eeee569f4cf428da21f7a2f68255
+      internalID: 1679095577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_65
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 0
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 508cb24a756d8894fb53962734c943ae
+      internalID: 390895470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_66
+      rect:
+        serializedVersion: 2
+        x: 3498
+        y: 0
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69c992d5aa6430b49af9defb405fc67b
+      internalID: 831815725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_67
+      rect:
+        serializedVersion: 2
+        x: 4664
+        y: 0
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2e2a31738eca4149af66a03c4537ced
+      internalID: 12051805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_68
+      rect:
+        serializedVersion: 2
+        x: 5830
+        y: 0
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f52ca6d5a1eb5104cb6e38f4d4d4ba8c
+      internalID: 484476728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NormalPad_69
+      rect:
+        serializedVersion: 2
+        x: 6996
+        y: 0
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17e09e9ea8e667742b3e9116f97e7b19
+      internalID: -1516923078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: c0e7d55c5fb4a97469bd3f94d7fbf188
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      NormalPad_0: -2052240061
+      NormalPad_1: -1509091347
+      NormalPad_10: 157748829
+      NormalPad_11: 825192728
+      NormalPad_12: 1664524736
+      NormalPad_13: -393470581
+      NormalPad_14: -397828943
+      NormalPad_15: -1387806047
+      NormalPad_16: 545594359
+      NormalPad_17: 1062307396
+      NormalPad_18: 1961716452
+      NormalPad_19: -718403935
+      NormalPad_2: 1018558156
+      NormalPad_20: 1518495597
+      NormalPad_21: -1356069546
+      NormalPad_22: -1339748767
+      NormalPad_23: -2120513481
+      NormalPad_24: -41155856
+      NormalPad_25: -479417276
+      NormalPad_26: -1643076333
+      NormalPad_27: -451667003
+      NormalPad_28: -1805644864
+      NormalPad_29: 1858970884
+      NormalPad_3: -173217738
+      NormalPad_30: 891912259
+      NormalPad_31: -661139909
+      NormalPad_32: -1418025749
+      NormalPad_33: -1042946137
+      NormalPad_34: -1971073134
+      NormalPad_35: 817373761
+      NormalPad_36: 1263880406
+      NormalPad_37: 958057338
+      NormalPad_38: -1134028764
+      NormalPad_39: 1667051992
+      NormalPad_4: -1012117750
+      NormalPad_40: -324510551
+      NormalPad_41: 1359270867
+      NormalPad_42: 1175662579
+      NormalPad_43: 612207953
+      NormalPad_44: -1945000539
+      NormalPad_45: -692244865
+      NormalPad_46: 143464065
+      NormalPad_47: 1063836897
+      NormalPad_48: -1712648835
+      NormalPad_49: -1554976802
+      NormalPad_5: 1070163289
+      NormalPad_50: 1965047916
+      NormalPad_51: 221524383
+      NormalPad_52: 1256182304
+      NormalPad_53: 812541989
+      NormalPad_54: -254602384
+      NormalPad_55: -905142042
+      NormalPad_56: -1610701201
+      NormalPad_57: -267011435
+      NormalPad_58: 1768636563
+      NormalPad_59: 1149987698
+      NormalPad_6: -154653287
+      NormalPad_60: -646346778
+      NormalPad_61: -13626685
+      NormalPad_62: -970730729
+      NormalPad_63: -163586787
+      NormalPad_64: 1679095577
+      NormalPad_65: 390895470
+      NormalPad_66: 831815725
+      NormalPad_67: 12051805
+      NormalPad_68: 484476728
+      NormalPad_69: -1516923078
+      NormalPad_7: -1175029651
+      NormalPad_8: 2100530007
+      NormalPad_9: -647940641
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

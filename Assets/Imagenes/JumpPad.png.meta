@@ -1,0 +1,1205 @@
+fileFormatVersion: 2
+guid: b6ec0a14fc9cf1042bfaed8bab10a105
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: JumpPad_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4608
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ba0a69907fa68d45acefb871e5cd9b3
+      internalID: 89655805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpPad_1
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 4608
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eec35b754105e6b458cb02f266ca215b
+      internalID: 336202485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpPad_2
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 4608
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef3e203178f52f648b299cb40e89e257
+      internalID: 1395376561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpPad_3
+      rect:
+        serializedVersion: 2
+        x: 3498
+        y: 4608
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 156d90003b419af46ae0a564dbd919a3
+      internalID: 116979085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpPad_4
+      rect:
+        serializedVersion: 2
+        x: 4664
+        y: 4608
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad62d0461feaf3d4caa786956acfd7b4
+      internalID: 2045925769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpPad_5
+      rect:
+        serializedVersion: 2
+        x: 5830
+        y: 4608
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 470fdd3eedc36194da325b29c2e206d4
+      internalID: 586414207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpPad_6
+      rect:
+        serializedVersion: 2
+        x: 6996
+        y: 4608
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afbabeda34cc89348b3bea8554456a85
+      internalID: 370285444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpPad_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3840
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae0cfad97637daa40884c93c07f919c8
+      internalID: -1295313603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpPad_8
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 3840
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac310d0084dffb344bffc4ca0c4639f7
+      internalID: -2078619010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpPad_9
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 3840
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfee7ea80b5401b40aece1e9107bcef5
+      internalID: 1162890237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpPad_10
+      rect:
+        serializedVersion: 2
+        x: 3498
+        y: 3840
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee4af3bf699de69488ff697d5c359c3c
+      internalID: 1098557101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpPad_11
+      rect:
+        serializedVersion: 2
+        x: 4664
+        y: 3840
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cd1fb831cb0caa4dad9ed96666dc739
+      internalID: -648701951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpPad_12
+      rect:
+        serializedVersion: 2
+        x: 5830
+        y: 3840
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f167631a03afd1842840a6abd000b2cd
+      internalID: 1377179532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpPad_13
+      rect:
+        serializedVersion: 2
+        x: 6996
+        y: 3840
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9af18158268534548bfa5d81f6ec6e9e
+      internalID: 646823800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpPad_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3072
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3de913787c8994441b17a16078e288b1
+      internalID: 1100661386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpPad_15
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 3072
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e9faa376c353e846982e6cb7cdad6e2
+      internalID: -1586275225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpPad_16
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 3072
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64654a0edf983a843b87f427c0748309
+      internalID: -258537064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpPad_17
+      rect:
+        serializedVersion: 2
+        x: 3498
+        y: 3072
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce8e350c37cd94346ba4ac1487910ac9
+      internalID: -1341402103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpPad_18
+      rect:
+        serializedVersion: 2
+        x: 4664
+        y: 3072
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cec3a2c5b31fd75439a0d906ad82f8c0
+      internalID: 1117586098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpPad_19
+      rect:
+        serializedVersion: 2
+        x: 5830
+        y: 3072
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee21b069a9fa5024e908dfe3106a6c8b
+      internalID: 1818772635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpPad_20
+      rect:
+        serializedVersion: 2
+        x: 6996
+        y: 3072
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e80e77132155fbb43aa3661bf1e1d7b0
+      internalID: 1917872276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpPad_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2304
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 427a5b7b11909134bb3f431e05208c10
+      internalID: -1903344990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpPad_22
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 2304
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5843c46d6f532141adf658dd3157bc7
+      internalID: 1323463196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpPad_23
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 2304
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd7475ac328c47b4cab4a64a06e6f81a
+      internalID: 359737539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpPad_24
+      rect:
+        serializedVersion: 2
+        x: 3498
+        y: 2304
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07a68601bffda5845b72cd9d2eced1bc
+      internalID: -1342429616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpPad_25
+      rect:
+        serializedVersion: 2
+        x: 4664
+        y: 2304
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36f1633e5a7f18e4bad3c464dbc8f011
+      internalID: 343489760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpPad_26
+      rect:
+        serializedVersion: 2
+        x: 5830
+        y: 2304
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4d42ff8eff31274da0272095d5af72a
+      internalID: 2050711124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpPad_27
+      rect:
+        serializedVersion: 2
+        x: 6996
+        y: 2304
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 303537ed72e21e648a365a2068ab98ea
+      internalID: 933157006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpPad_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1536
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6752fec3f0944854d935d309913a03a9
+      internalID: -541926727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpPad_29
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 1536
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d04ca501cbb26c642b5269455980e102
+      internalID: 74777426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpPad_30
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 1536
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a87c58715bcdca41b2164fb22bd01f7
+      internalID: 326965499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpPad_31
+      rect:
+        serializedVersion: 2
+        x: 3498
+        y: 1536
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d47d8c885aa8da4e972601f8e41e744
+      internalID: 1825231864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpPad_32
+      rect:
+        serializedVersion: 2
+        x: 4664
+        y: 1536
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3730917c8114d24683a478ab836dcb9
+      internalID: 330902111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpPad_33
+      rect:
+        serializedVersion: 2
+        x: 5830
+        y: 1536
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d13f67547d062d143b96c3869b4576ce
+      internalID: 1911884440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpPad_34
+      rect:
+        serializedVersion: 2
+        x: 6996
+        y: 1536
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e5f63c242f233947aee5b79fee86ff6
+      internalID: 566438081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpPad_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b982f5c24648b72419d67278d12b5592
+      internalID: -282197749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpPad_36
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 768
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddebb3e8209aadf4c9de9af1ebcb6f1f
+      internalID: 404951097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpPad_37
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 768
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f908b5da648c3d24da7fa420b6a65acb
+      internalID: -799863897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpPad_38
+      rect:
+        serializedVersion: 2
+        x: 3498
+        y: 768
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e9c6b51eb9ffce4fad4c98e554d009a
+      internalID: 1345659302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpPad_39
+      rect:
+        serializedVersion: 2
+        x: 4664
+        y: 768
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff9c48d07bc447140b5b5d03d4294b1c
+      internalID: 47734073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpPad_40
+      rect:
+        serializedVersion: 2
+        x: 5830
+        y: 768
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 306410d7d5655034e910101858e781d8
+      internalID: 2107325625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpPad_41
+      rect:
+        serializedVersion: 2
+        x: 6996
+        y: 768
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faa3b627990477648b7f53ab0acbbb0b
+      internalID: 419345954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpPad_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cbea272fadc6114e91291da8b7bf7c4
+      internalID: 339763846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpPad_43
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 0
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f753699a2395cd45a88b4bfaaad7b82
+      internalID: 70863687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpPad_44
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 0
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30b59c4a07f601c4090c3affbe9ed6ec
+      internalID: 183055316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpPad_45
+      rect:
+        serializedVersion: 2
+        x: 3498
+        y: 0
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25b6786d386e800468ff3be24b0403f6
+      internalID: -504758205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpPad_46
+      rect:
+        serializedVersion: 2
+        x: 4664
+        y: 0
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7133ef2104ea7224b98afeaa37f6672c
+      internalID: -800416489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpPad_47
+      rect:
+        serializedVersion: 2
+        x: 5830
+        y: 0
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52aacf1b0e477674d956c9ec486875bb
+      internalID: -1185524780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpPad_48
+      rect:
+        serializedVersion: 2
+        x: 6996
+        y: 0
+        width: 1166
+        height: 768
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c31b2c4904ebc545b868d4c856519e9
+      internalID: -1306155826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 57bc5c57d2a825943971426df2fa9146
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      JumpPad_0: 89655805
+      JumpPad_1: 336202485
+      JumpPad_10: 1098557101
+      JumpPad_11: -648701951
+      JumpPad_12: 1377179532
+      JumpPad_13: 646823800
+      JumpPad_14: 1100661386
+      JumpPad_15: -1586275225
+      JumpPad_16: -258537064
+      JumpPad_17: -1341402103
+      JumpPad_18: 1117586098
+      JumpPad_19: 1818772635
+      JumpPad_2: 1395376561
+      JumpPad_20: 1917872276
+      JumpPad_21: -1903344990
+      JumpPad_22: 1323463196
+      JumpPad_23: 359737539
+      JumpPad_24: -1342429616
+      JumpPad_25: 343489760
+      JumpPad_26: 2050711124
+      JumpPad_27: 933157006
+      JumpPad_28: -541926727
+      JumpPad_29: 74777426
+      JumpPad_3: 116979085
+      JumpPad_30: 326965499
+      JumpPad_31: 1825231864
+      JumpPad_32: 330902111
+      JumpPad_33: 1911884440
+      JumpPad_34: 566438081
+      JumpPad_35: -282197749
+      JumpPad_36: 404951097
+      JumpPad_37: -799863897
+      JumpPad_38: 1345659302
+      JumpPad_39: 47734073
+      JumpPad_4: 2045925769
+      JumpPad_40: 2107325625
+      JumpPad_41: 419345954
+      JumpPad_42: 339763846
+      JumpPad_43: 70863687
+      JumpPad_44: 183055316
+      JumpPad_45: -504758205
+      JumpPad_46: -800416489
+      JumpPad_47: -1185524780
+      JumpPad_48: -1306155826
+      JumpPad_5: 586414207
+      JumpPad_6: 370285444
+      JumpPad_7: -1295313603
+      JumpPad_8: -2078619010
+      JumpPad_9: 1162890237
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -11,6 +11,11 @@ public class SelectorNivel : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (!AudioManager.instance.IsPlaying("Menu"))
+        {
+            AudioManager.instance.Play("Menu");
+        }
+
         animator = fade.GetComponent<Animator>();
         animator.SetTrigger("FadeOutT");
 

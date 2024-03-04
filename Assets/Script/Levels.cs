@@ -13,12 +13,25 @@ public class Levels : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //detiene la musica del audiomanager
-        AudioManager.instance.Play("Menu");
+        //Si no estaba sonando ya, reproduce la musica del menu
+        if (!AudioManager.instance.IsPlaying("Menu"))
+        {
+            AudioManager.instance.Play("Menu");
+        }
+
         animator = fade.GetComponent<Animator>();
+
+        StartCoroutine(fadeout());
 
         Button button = GetComponent<Button>();
         button.onClick.AddListener(TaskOnClick);
+    }
+
+    IEnumerator fadeout()
+    {
+        animator.SetTrigger("FadeOutT");
+        yield return new WaitForSeconds(0.5f);
+        fade.SetActive(false);
     }
 
     void TaskOnClick()
