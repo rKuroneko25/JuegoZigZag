@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class Arcade : MonoBehaviour
+public class PlayAgain : MonoBehaviour
 {
     public GameObject fade;
     private Animator animator;
@@ -29,7 +29,7 @@ public class Arcade : MonoBehaviour
         animator.SetTrigger("FadeInT");
         PlayerPrefs.SetInt("Fade", 1);
         FindObjectOfType<AudioManager>().Play("StartLevel");
-        FindObjectOfType<AudioManager>().Stop("Menu");
+        FindObjectOfType<AudioManager>().Stop("GameOver");
         yield return new WaitForSeconds(1f);
         FindObjectOfType<AudioManager>().Play("Arcade");
         PlayerPrefs.SetString("LevelSelected", "0");
