@@ -25,6 +25,9 @@ public class JugadorBola : MonoBehaviour
     public Text scoreText;
     public GameObject fade;
     public Text attemptsText;
+    public GameObject ImageWin;
+    public GameObject WinInterface;
+    public GameObject GUI;
 
     //PRIVADAS
     private Vector3 offset;
@@ -52,6 +55,8 @@ public class JugadorBola : MonoBehaviour
     private float timer;
     private bool quietomanin;
     private Animator animator;
+    private Animator WinText;
+    private Animator WinPanel;
     private float cuentaPads;
 
     // Start is called before the first frame update
@@ -621,8 +626,36 @@ public class JugadorBola : MonoBehaviour
         PlayerPrefs.SetInt("Clicks"+Nivel, Clicks + PlayerPrefs.GetInt("Clicks"+Nivel));
         PlayerPrefs.SetInt("Attemps"+Nivel, Attempts + PlayerPrefs.GetInt("Attemps"+Nivel));
         
-        //Poppear LevelComplete y la musica Win
-        //Poppear resultados -> Level Complete / Clicks: / Attempts: 
+        GUI.SetActive(false);
+        FindObjectOfType<AudioManager>().Play("Win");
+        StartCoroutine(Ganar());
+    }
+
+    IEnumerator Ganar()
+    {
+        yield return new WaitForSeconds(1.7f);
+        GameObject.Find("Jugador").SetActive(false);
+        
+        // Animation texto ganar
+        ImageWin.SetActive(true);
+        WinText = ImageWin.GetComponent<Animator>();
+        WinText.SetTrigger("Click");
+        Invoke("parar", 1f);
+    }
+
+    void parar()
+    {
+        WinText.SetTrigger("UnClick");
+        Invoke("parar2", 0.5f);
+    }
+
+    void parar2()
+    {
+        ImageWin.SetActive(false);
+        
+        // Animation Bajar menu de resultados
+        WinPanel = WinInterface.GetComponent<Animator>();
+        WinPanel.SetTrigger("WinT");
     }
 
     IEnumerator DesplazarHaciaCentro(Vector3 centro)

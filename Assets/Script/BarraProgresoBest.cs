@@ -19,7 +19,7 @@ public class BarraProgresoBest : MonoBehaviour
                 break;
             case "2":
                 //duration = 100f;
-                maxValue = 305f;
+                maxValue = 304f;
                 break;
             case "3":
                 //duration = 97f;
