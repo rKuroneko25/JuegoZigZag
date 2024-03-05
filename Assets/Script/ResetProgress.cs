@@ -23,5 +23,16 @@ public class ResetProgress : MonoBehaviour
         PlayerPrefs.SetFloat("Progress3",0);
         PlayerPrefs.SetFloat("Progress4",0);
         PlayerPrefs.SetFloat("Progress5",0);
+        PlayerPrefs.SetInt("Attemps1",0);
+        PlayerPrefs.SetInt("Attemps2",0);
+        PlayerPrefs.SetInt("Attemps3",0);
+        PlayerPrefs.SetInt("Attemps4",0);
+        PlayerPrefs.SetInt("Attemps5",0);
+        PlayerPrefs.SetInt("Clicks1",0);
+        PlayerPrefs.SetInt("Clicks2",0);
+        PlayerPrefs.SetInt("Clicks3",0);
+        PlayerPrefs.SetInt("Clicks4",0);
+        PlayerPrefs.SetInt("Clicks5",0);
+        PlayerPrefs.SetInt("HighScore",0);
     }
 }

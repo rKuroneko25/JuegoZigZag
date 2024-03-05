@@ -629,10 +629,11 @@ public class JugadorBola : MonoBehaviour
             FindObjectOfType<AudioManager>().Play("GameOver");
             SceneManager.LoadScene("Game Over");
         }
-        else
+        else{
             PlayerPrefs.SetInt("Clicks"+Nivel, Clicks + PlayerPrefs.GetInt("Clicks"+Nivel));
             PlayerPrefs.SetInt("Attemps"+Nivel, Attempts + PlayerPrefs.GetInt("Attemps"+Nivel));
             SceneManager.LoadScene(SceneManager.GetActiveScene().name); 
+        }
     }
 
     void Meta(GameObject coso)
