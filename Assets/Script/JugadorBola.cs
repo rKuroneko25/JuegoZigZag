@@ -76,6 +76,29 @@ public class JugadorBola : MonoBehaviour
         Bifurcacion = 0;
         quietomanin = false;
         cuentaPads = 0;
+
+        switch(PlayerPrefs.GetString("LevelSelectedString")){
+            case "1":
+                //color del fondo a naranja
+                camara.backgroundColor = new Color(0.878f, 0.573f, 0f);
+                break;
+            case "2":
+                //color del fondo a rojo
+                camara.backgroundColor = new Color(0.878f, 0.455f, 0.455f);
+                break;
+            case "3":
+                //color del fondo a morado
+                camara.backgroundColor = new Color(0.71f, 0.349f, 0.71f);
+                break;
+            case "4":
+                //color del fondo a verde claro
+                camara.backgroundColor = new Color(0.424f, 0.871f, 0.373f);
+                break;
+            case "5":
+                //color del fondo a amarillo
+                camara.backgroundColor = new Color(0.89f, 0.89f, 0.494f);
+                break;
+        }
         
         Physics.gravity = new Vector3(0, -9.81f, 0);
 
@@ -607,6 +630,8 @@ public class JugadorBola : MonoBehaviour
             SceneManager.LoadScene("Game Over");
         }
         else
+            PlayerPrefs.SetInt("Clicks"+Nivel, Clicks + PlayerPrefs.GetInt("Clicks"+Nivel));
+            PlayerPrefs.SetInt("Attemps"+Nivel, Attempts + PlayerPrefs.GetInt("Attemps"+Nivel));
             SceneManager.LoadScene(SceneManager.GetActiveScene().name); 
     }
 
@@ -621,10 +646,6 @@ public class JugadorBola : MonoBehaviour
 
         Vector3 centro = coso.GetComponent<Renderer>().bounds.center;
         StartCoroutine(DesplazarHaciaCentro(centro));
-        
-        //Guardar la informacion (para la "i" de Level Selector)
-        PlayerPrefs.SetInt("Clicks"+Nivel, Clicks + PlayerPrefs.GetInt("Clicks"+Nivel));
-        PlayerPrefs.SetInt("Attemps"+Nivel, Attempts + PlayerPrefs.GetInt("Attemps"+Nivel));
         
         GUI.SetActive(false);
         FindObjectOfType<AudioManager>().Play("Win");

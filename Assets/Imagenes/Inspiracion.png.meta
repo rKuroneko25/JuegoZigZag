@@ -571,6 +571,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Inspiracion_5
+      rect:
+        serializedVersion: 2
+        x: 2617
+        y: 714
+        width: 91
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ee1e53de4becca4ba1f64eb0c7c41cf
+      internalID: -705255527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -593,6 +614,7 @@ TextureImporter:
       Inspiracion_2: -1236966623
       Inspiracion_3: -1429603389
       Inspiracion_4: 66120506
+      Inspiracion_5: -705255527
       Level complete: -1243513510
       Palito: -1514042403
       Palo abajo: 1133220262

@@ -21,7 +21,7 @@ public class ExitLevel : MonoBehaviour
     IEnumerator FadeOut()
     {
         animator.SetTrigger("FadeOutT");
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.25f);
         fade.SetActive(false);
     }
     

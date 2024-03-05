@@ -15,7 +15,7 @@ public class BotonRestartLevel : MonoBehaviour
 
     void RestartLevel()
     {
-        FindObjectOfType<AudioManager>().Stop("Level"+PlayerPrefs.GetString("LevelSelected"));
+        FindObjectOfType<AudioManager>().Stop("Level"+PlayerPrefs.GetString("LevelSelectedString"));
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
