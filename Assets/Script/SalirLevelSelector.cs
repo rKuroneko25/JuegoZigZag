@@ -25,6 +25,7 @@ public class SalirLevelSelector : MonoBehaviour
     IEnumerator LoadLevel()
     {
         animator.SetTrigger("FadeInT");
+        FindObjectOfType<AudioManager>().Stop("Level"+PlayerPrefs.GetString("LevelSelectedString"));
         FindObjectOfType<AudioManager>().Play("QuitLevel");
         yield return new WaitForSeconds(0.5f);
         SceneManager.LoadScene("LevelSelector");

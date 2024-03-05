@@ -9,7 +9,7 @@ public class NombreNivel : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        switch(PlayerPrefs.GetString("LevelSelected"))
+        switch(PlayerPrefs.GetString("LevelSelectedString"))
         {
             case "1":
                 text.text = "Chooser";

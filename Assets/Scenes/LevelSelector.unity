@@ -208,7 +208,7 @@ GameObject:
   m_Component:
   - component: {fileID: 30129751}
   m_Layer: 5
-  m_Name: ProgressBar (1)
+  m_Name: ProgressBar4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -394,7 +394,7 @@ GameObject:
   - component: {fileID: 98171276}
   - component: {fileID: 98171275}
   m_Layer: 5
-  m_Name: ProgressBest
+  m_Name: ProgressBest5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -472,9 +472,9 @@ GameObject:
   - component: {fileID: 100419263}
   - component: {fileID: 100419266}
   - component: {fileID: 100419265}
-  - component: {fileID: 100419264}
+  - component: {fileID: 100419267}
   m_Layer: 5
-  m_Name: BarBest
+  m_Name: BarBest5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -499,20 +499,6 @@ RectTransform:
   m_AnchoredPosition: {x: -625, y: -554}
   m_SizeDelta: {x: 427.0347, y: 40.7966}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &100419264
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 100419262}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e12163556ca975f4ba8263376e6b3b55, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  progressBarImageBest: {fileID: 100419265}
-  progressTextBest: {fileID: 98171275}
 --- !u!114 &100419265
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -551,6 +537,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100419262}
   m_CullTransparentMesh: 1
+--- !u!114 &100419267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100419262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d68789d702afb24daa4bad1dcb0481c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  progressBarImageBest: {fileID: 100419265}
+  progressTextBest: {fileID: 98171275}
 --- !u!1 &170705307
 GameObject:
   m_ObjectHideFlags: 0
@@ -561,7 +561,7 @@ GameObject:
   m_Component:
   - component: {fileID: 170705308}
   m_Layer: 5
-  m_Name: ProgressBar (1)
+  m_Name: ProgressBar1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1419,7 +1419,7 @@ GameObject:
   m_Component:
   - component: {fileID: 469823958}
   m_Layer: 5
-  m_Name: ProgressBar (1)
+  m_Name: ProgressBar3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1860,9 +1860,9 @@ GameObject:
   - component: {fileID: 603900193}
   - component: {fileID: 603900196}
   - component: {fileID: 603900195}
-  - component: {fileID: 603900194}
+  - component: {fileID: 603900197}
   m_Layer: 5
-  m_Name: BarBest
+  m_Name: BarBest4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1887,20 +1887,6 @@ RectTransform:
   m_AnchoredPosition: {x: -625, y: -554}
   m_SizeDelta: {x: 427.0347, y: 40.7966}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &603900194
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 603900192}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e12163556ca975f4ba8263376e6b3b55, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  progressBarImageBest: {fileID: 603900195}
-  progressTextBest: {fileID: 1775901592}
 --- !u!114 &603900195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1939,6 +1925,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 603900192}
   m_CullTransparentMesh: 1
+--- !u!114 &603900197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603900192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f47ca5b1c4e45749bdda0b2a25e9c95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  progressBarImageBest: {fileID: 603900195}
+  progressTextBest: {fileID: 1775901592}
 --- !u!1 &682945185
 GameObject:
   m_ObjectHideFlags: 0
@@ -1981,7 +1981,7 @@ GameObject:
   m_Component:
   - component: {fileID: 707895354}
   m_Layer: 5
-  m_Name: Barra
+  m_Name: Barra3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2629,7 +2629,7 @@ GameObject:
   m_Component:
   - component: {fileID: 947131219}
   m_Layer: 5
-  m_Name: Barra
+  m_Name: Barra4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2677,7 +2677,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1063805018}
   m_Layer: 5
-  m_Name: Barra
+  m_Name: Barra5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2863,9 +2863,9 @@ GameObject:
   - component: {fileID: 1109896566}
   - component: {fileID: 1109896569}
   - component: {fileID: 1109896568}
-  - component: {fileID: 1109896567}
+  - component: {fileID: 1109896570}
   m_Layer: 5
-  m_Name: BarBest
+  m_Name: BarBest2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2890,20 +2890,6 @@ RectTransform:
   m_AnchoredPosition: {x: -625, y: -554}
   m_SizeDelta: {x: 427.0347, y: 40.7966}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1109896567
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1109896565}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e12163556ca975f4ba8263376e6b3b55, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  progressBarImageBest: {fileID: 1109896568}
-  progressTextBest: {fileID: 1538993334}
 --- !u!114 &1109896568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2942,6 +2928,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1109896565}
   m_CullTransparentMesh: 1
+--- !u!114 &1109896570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1109896565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ff6aa3d1edfb7d4d9e70bfc864a8128, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  progressBarImageBest: {fileID: 1109896568}
+  progressTextBest: {fileID: 1538993334}
 --- !u!1 &1122934073
 GameObject:
   m_ObjectHideFlags: 0
@@ -2954,7 +2954,7 @@ GameObject:
   - component: {fileID: 1122934076}
   - component: {fileID: 1122934075}
   m_Layer: 5
-  m_Name: ProgressBest
+  m_Name: ProgressBest3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3974,7 +3974,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1487469713}
   m_Layer: 5
-  m_Name: Barra
+  m_Name: Barra1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4086,7 +4086,7 @@ GameObject:
   - component: {fileID: 1538993335}
   - component: {fileID: 1538993334}
   m_Layer: 5
-  m_Name: ProgressBest
+  m_Name: ProgressBest2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4284,9 +4284,9 @@ GameObject:
   - component: {fileID: 1602557373}
   - component: {fileID: 1602557376}
   - component: {fileID: 1602557375}
-  - component: {fileID: 1602557374}
+  - component: {fileID: 1602557377}
   m_Layer: 5
-  m_Name: BarBest
+  m_Name: BarBest3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4311,20 +4311,6 @@ RectTransform:
   m_AnchoredPosition: {x: -625, y: -554}
   m_SizeDelta: {x: 427.0347, y: 40.7966}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1602557374
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1602557372}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e12163556ca975f4ba8263376e6b3b55, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  progressBarImageBest: {fileID: 1602557375}
-  progressTextBest: {fileID: 1122934075}
 --- !u!114 &1602557375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4363,6 +4349,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1602557372}
   m_CullTransparentMesh: 1
+--- !u!114 &1602557377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1602557372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8b0ed91ecdac88429ed0b968b8224f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  progressBarImageBest: {fileID: 1602557375}
+  progressTextBest: {fileID: 1122934075}
 --- !u!1001 &1618155249
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4891,7 +4891,7 @@ GameObject:
   - component: {fileID: 1775901593}
   - component: {fileID: 1775901592}
   m_Layer: 5
-  m_Name: ProgressBest
+  m_Name: ProgressBest4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5045,7 +5045,7 @@ GameObject:
   - component: {fileID: 1820842551}
   - component: {fileID: 1820842550}
   m_Layer: 5
-  m_Name: ProgressBest
+  m_Name: ProgressBest1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5197,7 +5197,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1966594760}
   m_Layer: 5
-  m_Name: ProgressBar (1)
+  m_Name: ProgressBar5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5343,7 +5343,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1973917960}
   m_Layer: 5
-  m_Name: ProgressBar (1)
+  m_Name: ProgressBar2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5380,7 +5380,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2004604300}
   m_Layer: 5
-  m_Name: Barra
+  m_Name: Barra2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5494,9 +5494,9 @@ GameObject:
   - component: {fileID: 2078126548}
   - component: {fileID: 2078126551}
   - component: {fileID: 2078126550}
-  - component: {fileID: 2078126549}
+  - component: {fileID: 2078126552}
   m_Layer: 5
-  m_Name: BarBest
+  m_Name: BarBest1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5521,20 +5521,6 @@ RectTransform:
   m_AnchoredPosition: {x: -625, y: -554}
   m_SizeDelta: {x: 427.0347, y: 40.7966}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2078126549
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2078126547}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e12163556ca975f4ba8263376e6b3b55, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  progressBarImageBest: {fileID: 2078126550}
-  progressTextBest: {fileID: 1820842550}
 --- !u!114 &2078126550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5573,6 +5559,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2078126547}
   m_CullTransparentMesh: 1
+--- !u!114 &2078126552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2078126547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c092db30a9b5a54597e3af2bbec0ebc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  progressBarImageBest: {fileID: 2078126550}
+  progressTextBest: {fileID: 1820842550}
 --- !u!1 &2083286930
 GameObject:
   m_ObjectHideFlags: 0
