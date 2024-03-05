@@ -23,7 +23,7 @@ public class BarraProgresoBest : MonoBehaviour
             case 3:
                 maxValue = 288f;
                 break;
-            case 4:   
+            case 4:    
                 maxValue = 224f;
                 break;
             case 5:
@@ -40,8 +40,7 @@ public class BarraProgresoBest : MonoBehaviour
     public void UpdateProgressBar()
     {
         //Barra pausa
-        float bestValue = PlayerPrefs.GetFloat("Progress"+Nivel.ToString());
-        progressBarImageBest.fillAmount = bestValue;
-        progressTextBest.text = (bestValue * 100f).ToString("F0") + "%";
+        progressBarImageBest.fillAmount = PlayerPrefs.GetFloat("Progress"+Nivel.ToString());
+        progressTextBest.text = (PlayerPrefs.GetFloat("Progress"+Nivel.ToString()) * 100f).ToString("F0") + "%";
     }
 }
