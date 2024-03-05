@@ -14,11 +14,10 @@ public class BarraProgresoBest : MonoBehaviour
         Nivel = PlayerPrefs.GetInt("LevelSelected");
         switch (Nivel){
             case 1:
-                maxValue = 220f;
+                maxValue = 219f;
                 break;
             case 2:
-                //duration = 100f;
-                maxValue = 304f;
+                maxValue = 303f;
                 break;
             case 3:
                 maxValue = 288f;
@@ -40,7 +39,13 @@ public class BarraProgresoBest : MonoBehaviour
     public void UpdateProgressBar()
     {
         //Barra pausa
-        progressBarImageBest.fillAmount = PlayerPrefs.GetFloat("Progress"+Nivel.ToString());
-        progressTextBest.text = (PlayerPrefs.GetFloat("Progress"+Nivel.ToString()) * 100f).ToString("F0") + "%";
+        if (PlayerPrefs.GetFloat("Progress"+Nivel.ToString()) < 0.000001f)
+        {
+            progressBarImageBest.fillAmount = 0.000001f;
+
+        } else {
+            progressBarImageBest.fillAmount = PlayerPrefs.GetFloat("Progress"+Nivel.ToString());
+            progressTextBest.text = (PlayerPrefs.GetFloat("Progress"+Nivel.ToString()) * 100f).ToString("F0") + "%";
+        }
     }
 }

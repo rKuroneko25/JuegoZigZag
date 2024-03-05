@@ -6,11 +6,10 @@ public class Barra2 : MonoBehaviour
 
     public Image progressBarImageBest;
     public Text progressTextBest;
-    private float maxValue;
 
     void Start()
     {
-        maxValue = 304f;
+
     }
 
     void Update()

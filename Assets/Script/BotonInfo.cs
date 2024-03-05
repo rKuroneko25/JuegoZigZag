@@ -24,7 +24,7 @@ public class BotonInfo : MonoBehaviour
 
     void TaskOnClick()
     {
-        texto.text = "Attemps: "+PlayerPrefs.GetInt("Attemps"+level.ToString())+"\nClicks: "+PlayerPrefs.GetInt("Clicks"+level.ToString());
+        texto.text = "Attempts: "+PlayerPrefs.GetInt("Attemps"+level.ToString())+"\nClicks: "+PlayerPrefs.GetInt("Clicks"+level.ToString());
         oscuro.SetActive(true);
         Salir.SetActive(true);
         animator.SetTrigger("Click");

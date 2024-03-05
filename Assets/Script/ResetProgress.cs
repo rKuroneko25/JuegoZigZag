@@ -18,11 +18,11 @@ public class ResetProgress : MonoBehaviour
     {
         oscuro.SetActive(false);
         Salir.SetActive(false);
-        PlayerPrefs.SetFloat("Progress1",0);
-        PlayerPrefs.SetFloat("Progress2",0);
-        PlayerPrefs.SetFloat("Progress3",0);
-        PlayerPrefs.SetFloat("Progress4",0);
-        PlayerPrefs.SetFloat("Progress5",0);
+        PlayerPrefs.SetFloat("Progress1",0f);
+        PlayerPrefs.SetFloat("Progress2",0f);
+        PlayerPrefs.SetFloat("Progress3",0f);
+        PlayerPrefs.SetFloat("Progress4",0f);
+        PlayerPrefs.SetFloat("Progress5",0f);
         PlayerPrefs.SetInt("Attemps1",0);
         PlayerPrefs.SetInt("Attemps2",0);
         PlayerPrefs.SetInt("Attemps3",0);

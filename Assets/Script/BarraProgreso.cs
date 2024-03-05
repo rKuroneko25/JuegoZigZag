@@ -19,11 +19,11 @@ public class BarraProgreso : MonoBehaviour
         switch (Nivel){
             case 1:
                 //duration = 87f;
-                maxValue = 220f;
+                maxValue = 219f;
                 break;
             case 2:
                 //duration = 100f;
-                maxValue = 304f;
+                maxValue = 303f;
                 break;
             case 3:
                 //duration = 97f;

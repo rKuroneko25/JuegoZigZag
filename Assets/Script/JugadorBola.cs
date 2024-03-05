@@ -638,6 +638,9 @@ public class JugadorBola : MonoBehaviour
 
     void Meta(GameObject coso)
     {
+        PlayerPrefs.SetInt("ClicksNow", Clicks);
+        PlayerPrefs.SetInt("Clicks"+Nivel, Clicks + PlayerPrefs.GetInt("Clicks"+Nivel));
+        PlayerPrefs.SetInt("Attemps"+Nivel, Attempts + PlayerPrefs.GetInt("Attemps"+Nivel));
         quietomanin = true;
         Rigidbody rb = GetComponent<Rigidbody>();
         if (rb != null)
