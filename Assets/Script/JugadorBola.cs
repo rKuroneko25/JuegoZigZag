@@ -63,7 +63,7 @@ public class JugadorBola : MonoBehaviour
     void Start()
     {
         PlayerPrefs.SetInt("Quieto", 0);
-        Nivel = PlayerPrefs.GetString("LevelSelected");
+        Nivel = PlayerPrefs.GetString("LevelSelectedString");
         Clicks = PlayerPrefs.GetInt("ClicksNow");
         Attempts = PlayerPrefs.GetInt("AttemptsNow");
         offset = camara.transform.position;

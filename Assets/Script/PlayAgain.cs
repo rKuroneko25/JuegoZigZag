@@ -32,7 +32,7 @@ public class PlayAgain : MonoBehaviour
         FindObjectOfType<AudioManager>().Stop("GameOver");
         yield return new WaitForSeconds(1f);
         FindObjectOfType<AudioManager>().Play("Arcade");
-        PlayerPrefs.SetString("LevelSelected", "0");
+        PlayerPrefs.SetString("LevelSelectedString", "0");
         SceneManager.LoadScene("Arcade");
     }
 }

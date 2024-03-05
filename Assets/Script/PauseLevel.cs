@@ -27,7 +27,7 @@ public class ExitLevel : MonoBehaviour
     
     void TaskOnClick()
     {
-        FindObjectOfType<AudioManager>().Pause("Level"+PlayerPrefs.GetString("LevelSelected"));
+        FindObjectOfType<AudioManager>().Pause("Level"+PlayerPrefs.GetString("LevelSelectedString"));
         PlayerPrefs.SetInt("Quieto",1);
         GUI.SetActive(false);
         PauseInt.SetActive(true);

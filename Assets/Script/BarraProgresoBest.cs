@@ -11,10 +11,9 @@ public class BarraProgresoBest : MonoBehaviour
 
     void Start()
     {
-        Nivel = PlayerPrefs.GetString("LevelSelected");
+        Nivel = PlayerPrefs.GetString("LevelSelectedString");
         switch (Nivel){
             case "1":
-                //duration = 87f;
                 maxValue = 220f;
                 break;
             case "2":
@@ -22,15 +21,12 @@ public class BarraProgresoBest : MonoBehaviour
                 maxValue = 304f;
                 break;
             case "3":
-                //duration = 97f;
                 maxValue = 288f;
                 break;
             case "4":   
-                //duration = 85f;
                 maxValue = 224f;
                 break;
             case "5":
-                //duration = 93f;
                 maxValue = 222f;
                 break;
         }
